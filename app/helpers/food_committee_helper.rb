@@ -1,0 +1,2 @@
+module FoodCommitteeHelper
+end

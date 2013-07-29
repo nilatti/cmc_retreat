@@ -1,0 +1,12 @@
+<h2>Retreat Committee</h2>
+<p>Total numbers:<br />
+<b>Camping:</b>
+<%= @families.map(&:camp).sum %><br />
+<b>Cabin:</b>
+<%= @families.map(&:cabin).sum %><br />
+<b>Day (Full Weekend)</b>
+<%= @families.map(&:day_full_weekend).sum %><br />
+<b>Day (Partial Weekend)</b>
+<%= @families.map(&:day_partial_weekend).sum %><br />
+
+

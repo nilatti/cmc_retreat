@@ -1,0 +1,19 @@
+.formtastic .input .label {
+  display:block;
+  width:15%;
+  float:left;
+  padding-top:.2em;
+}
+
+.formtastic .input .inline-hints {
+  color:#666;
+  margin:0.5em 0 0 2%;
+}
+
+.formtastic .stringish input {
+  width:40%;
+}
+
+.formtastic .number input {
+	width: 10%;
+}

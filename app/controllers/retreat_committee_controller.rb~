@@ -1,0 +1,5 @@
+class RetreatCommitteeController < ApplicationController
+  def show
+    @families = Family.all
+  end
+end

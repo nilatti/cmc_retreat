@@ -1,0 +1,64 @@
+<p id="notice"><%= notice %></p>
+<p>
+  <b>Cost for retreat:</b>
+$<%= @family.total_cost %>
+</p>
+<p>
+<b>Food to bring:</b>
+<% if @family.friday_supper > 0 %>
+Food for potluck
+<% end %>
+<% @family.food_items.each do |fi| %>
+  <%= fi.description %>
+<% end %>
+</p>
+<p><b>Family name: </b>
+  <%= @family.family_name %>
+</p>
+<p>
+  <b>Family members: </b>
+  <%= @family.people.map(&:first_name).join(", ") %>
+</p>
+<p>
+  <b>Accomodations:</b>
+  <ul>
+    <li>Cabin: <%= @family.cabin %></li>
+    <li>Camping: <%= @family.camp %></li>
+    <li>Daytime (full weekend): <%= @family.day_full_weekend %></li>
+    <li>Daytime (partial weekend): <%= @family.day_partial_weekend %></li>
+  </ul>
+</p>
+<p>
+  <b>Meals</b>
+  <ul>
+    <li>Friday supper: <%= @family.friday_supper %></li>
+    <li>Friday snack: <%= @family.friday_snack %></li>
+    <li>Saturday breakfast: <%= @family.saturday_breakfast %></li>
+    <li>Saturday lunch: <%= @family.saturday_lunch %></li>
+    <li>Saturday dinner: <%= @family.saturday_dinner %></li>
+    <li>Saturday snack: <%= @family.saturday_snack %></li>
+    <li>Sunday breakfast: <%= @family.sunday_breakfast %></li>
+    <li>Sunday lunch: <%= @family.sunday_lunch %></li>
+  </ul>
+</p>
+<p>
+  <b>Contribution:</b>
+  <%= @family.contribution %>
+</p>
+
+<p>
+  <b>Paid:</b>
+  <%= @family.paid %>
+</p>
+
+
+<p>
+  <b>Allergies:</b>
+  <%= @family.allergies %>
+</p>
+
+
+<%= link_to 'Edit', edit_family_path(@family) %> |
+<%= link_to 'Back', families_path %>
+
+<%= link_to 'Pay Now', @family.paypal_url(families_url) %>

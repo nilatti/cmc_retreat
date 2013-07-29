@@ -1,0 +1,6 @@
+<%= semantic_form_for(@food_item) do |f| %>
+  <% f.inputs %>
+  <%= f.input :description %>
+  <%= f.input :requested, :label => "How many do we need?" %>
+  <%= f.actions %>
+<% end %>

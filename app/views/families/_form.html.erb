@@ -1,0 +1,52 @@
+<font color="red">
+<ul>
+<% @family.errors.each_with_index do |msg, i| %>
+  <li><%= msg[1] %></li>
+<% end %>
+</ul> 
+</font>
+<%= semantic_nested_form_for @family do |f| %>
+  <%= f.inputs do %>
+    <i>Please start by adding all of the people who will be attending from your family.</i><br />
+    <%= f.fields_for :people do |person_form| %>
+        <%= person_form.inputs do %>
+          <%= person_form.input :first_name, :required => true %>
+          <%= person_form.input :last_name, :required => true %>
+          <%= person_form.input :age, :label => "If this person is a child, please enter their age in years" %>
+          <%= person_form.input :family_id, :as => :hidden, :value => @family.id %>
+        <% end %>
+        <%= person_form.link_to_remove "Remove this person" %>
+        <hr>
+      <% end %>
+      <%= f.link_to_add "Add family member", :people %>
+    <% end %>
+    <%= f.input :email, :label => "If you would like an email confirmation of your registration and reminder of what you've signed up for, please provide an email address" %>
+    <hr>
+<p><h3><%= f.inputs :name => "Accommodations", :id => "accomodations" do %></h3></p>
+<i>If you are only coming for Sunday worship and lunch, you do not have to pay (although a donation to help with food costs would be appreciated). Please let us know, in the next section, that you will be eating lunch with us. This helps us plan. <a href="#food">Click here</a> to jump to the food section.</i></p>
+<p><h4>There is a maximum cost of $100 per family. This adjusted cost will be reflected on the payment page.</h4></p>
+    <%= f.input :cabin, :label => "How many people will be staying in a cabin? This includes teens staying in The Ark ($25/person)", :as => :select, :collection => ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"], :include_blank => false %>
+    <%= f.input :camp, :label => "How many people will be camping? ($20/person)", :as => :select, :collection => ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"], :include_blank => false %>
+    <%= f.input :day_full_weekend, :label => "How many people plan to attend most of the weekend's activities, but not stay overnight? ($15/person)", :as => :select, :collection => ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"], :include_blank => false %>
+    <%= f.input :day_partial_weekend, :label => "How many people plan to attend some of the daytime activites, but not most? ($5/person)", :as => :select, :collection => ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"], :include_blank => false %>
+
+  <% end %>
+  <p><h3><a id="food"><%= f.inputs :name => "Food", :id => "food" do %></h3></a></p>
+    <%= f.input :friday_supper, :hint => "Potluck, bring a covered dish", :as => :select, :collection => ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"], :include_blank => false %>
+    <%= f.input :friday_snack, :as => :select, :collection => ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"], :include_blank => false %>
+  <%= f.input :saturday_breakfast, :as => :select, :collection => ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"], :include_blank => false %>
+  <%= f.input :saturday_lunch, :as => :select, :collection => ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"], :include_blank => false %>
+  <%= f.input :saturday_dinner, :as => :select, :collection => ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"], :include_blank => false %>
+  <%= f.input :saturday_snack, :hint => "MYF ice cream social fundraiser--bring cash", :as => :select, :collection => ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"], :include_blank => false %>
+  <%= f.input :sunday_breakfast, :hint => "Featuring Terry\'s famous donuts", :as => :select, :collection => ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"], :include_blank => false %>
+  <%= f.input :sunday_lunch, :as => :select, :collection => ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"], :include_blank => false %> 
+  <%= f.input :allergies, :label => "Do you have any food allergies or dietary restrictions?" %>
+  <% end %>
+  <h3><%= f.inputs :name => "Additional costs", :id => "additional" do %></h3>
+    <%= f.input :contribution, :label => "If you would like to make an additional contribution to help needy families attend the retreat, please list the amount (in dollars) here:" %>
+  <% end %>
+  <%= f.input :food_items, :collection => FoodItem.where('food_items.requested >= food_items.food_promises_count').order('food_items.requested DESC'), :member_label => :description %>
+  <%= f.input :volunteer_tasks, :collection => VolunteerTask.where('volunteer_tasks.requested >= volunteer_tasks.volunteer_promises_count').order('volunteer_tasks.time'), :member_label => :job_label %>
+<%= f.actions %>
+<% end %>
+

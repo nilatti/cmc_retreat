@@ -1,0 +1,10 @@
+Dear <%= @family.family_name %> Family,
+
+Thank you for signing up for CMC's church retreat.
+
+To review or edit your registration, <% unless @family.paid %> or to pay via PayPal, <% end %> go to <%= @family.family_url %>.
+
+We're glad you are going to join us!
+
+Thank you,
+Alisha Huber for Retreat Committee

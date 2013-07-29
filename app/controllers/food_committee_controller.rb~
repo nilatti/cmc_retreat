@@ -1,0 +1,5 @@
+class FoodCommitteeController < ApplicationController
+  def show
+    @families = Family.all
+  end
+end

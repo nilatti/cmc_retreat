@@ -1,0 +1,25 @@
+<h1>Listing volunteer_tasks</h1>
+
+<table>
+  <tr>
+    <th>Job</th>
+    <th>Requested</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @volunteer_tasks.each do |volunteer_task| %>
+  <tr>
+    <td><%= volunteer_task.job_title %></td>
+    <td><%= volunteer_task.requested %></td>
+    <td><%= link_to 'Show', volunteer_task %></td>
+    <td><%= link_to 'Edit', edit_volunteer_task_path(volunteer_task) %></td>
+    <td><%= link_to 'Destroy', volunteer_task, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Volunteer task', new_volunteer_task_path %>

@@ -1,0 +1,30 @@
+<h2> Food Committee Total Numbers:</h2>
+<p>
+<b>Friday Supper</b>
+<% friday_supper_total = 0 %>
+<%= @families.map(&:friday_supper).sum %>
+</p>
+<p>
+<b>Friday Snack</b>
+<% friday_snack_total = 0 %>
+<% @families.each do |f| %>
+  <% friday_snack_total = friday_snack_total + f.friday_snack %>
+<% end %>
+<%= friday_snack_total %>
+</p>
+....etc other meals go here
+<table>
+<th>Item</th>
+<th># Pledged</th>
+<th># Committed</th>
+<% @food_items.each do |fi| %>
+  <tr>
+  <td><%= fi.description %></td>
+  <td><%= fi.food_promises_count %></td>
+  <td><%= fi.requested %></td>
+  </tr>
+<% end %>
+</table>
+<%= link_to "Add food item", new_food_item_path %>
+
+

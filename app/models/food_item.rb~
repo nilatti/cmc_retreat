@@ -1,0 +1,15 @@
+class FoodItem < ActiveRecord::Base
+  attr_accessible :description, :requested
+  has_many :food_promises
+  has_many :families, :through => :food_promises
+
+#  scope :needed, lambda { |requested, food_promises_count| where (':requested >= :food_promises_count', :requested => requested, :food_promises_count => food_promises_count)}  
+
+ # scope :needed, lambda { where('requested > ?', 'food_promises_count' ) }
+  
+  scope :at_least_n_promises, ->(n = 1) { where('promises_count >= ?', n ) }
+
+  def self.needed?
+    :requested > :food_promises_count
+  end
+end

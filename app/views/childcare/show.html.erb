@@ -1,0 +1,12 @@
+<h2>Registered Children</h2>
+<p><% @kids.each do |k| %>
+  <%= k.first_name %> <%= k.last_name %> <%= k.age %><br />
+<% end %>
+</p>
+Total kids: <%= @kids.size %>
+
+<p>Totals by age:<br />
+<% @age_groups.each do |age, count| %>
+  <%= "#{age}-year-olds: #{count}" %><br />
+<% end %>
+

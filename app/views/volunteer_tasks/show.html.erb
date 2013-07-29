@@ -1,0 +1,8 @@
+<p id="notice"><%= notice %></p>
+<p><strong><%= @volunteer_task.job_title %></strong></p>
+<p><%= @volunteer_task.job_description %></p>
+<p><%= @volunteer_task.time %></p>
+<p>Number requested: <%= @volunteer_task.requested %></p>
+
+<%= link_to 'Edit', edit_volunteer_task_path(@volunteer_task) %> |
+<%= link_to 'Back', volunteer_tasks_path %>

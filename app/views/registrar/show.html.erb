@@ -1,0 +1,40 @@
+<h1>Listing families</h1>
+
+<table border="2">
+  <tr>
+    <th>Family Name</th>
+    <th>People</th>
+    <th>Cabin</th>
+    <th>Camp</th>
+    <th>Day full weekend</th>
+    <th>Day partial weekend</th>
+    <th>Contribution</th>
+    <th>TOTAL COST</th>
+    <th>Paid</th>
+    
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @families.each do |family| %>
+  <tr>
+    <td><%= family.family_name %>
+    <td><%= family.family_folks %></td>
+    <td><%= family.cabin %></td>
+    <td><%= family.camp %></td>
+    <td><%= family.day_full_weekend %></td>
+    <td><%= family.day_partial_weekend %></td>
+    <td><%= family.contribution %></td>
+    <td><%= family.total_cost %></td>
+    <td><%= family.paid %></td>   
+    <td><%= link_to 'Show', family %></td>
+    <td><%= link_to 'Edit', edit_family_path(family) %></td>
+    <td><%= link_to 'Destroy', family, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+<%= link_to 'Edit paid information', edit_registrar_path %>
+<%= link_to 'New Family', new_family_path %>

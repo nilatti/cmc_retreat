@@ -1,0 +1,6 @@
+class VolunteerPromise < ActiveRecord::Base
+  attr_accessible :family_id, :volunteer_task_id
+
+  belongs_to :family
+  belongs_to :volunteer_task
+end

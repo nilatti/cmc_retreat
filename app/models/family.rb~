@@ -1,0 +1,61 @@
+class Family < ActiveRecord::Base
+ 
+  has_many :people
+  has_many :food_promises
+  has_many :food_items, :through => :food_promises
+   attr_accessible :allergies, :cabin, :camp, :contribution, :day_full_weekend, :day_partial_weekend, :friday_snack, :friday_supper, :late_fee, :paid, :saturday_breakfast, :saturday_dinner, :saturday_lunch, :saturday_snack, :sunday_breakfast, :sunday_lunch, :people_attributes, :food_item_ids
+  accepts_nested_attributes_for :people, :allow_destroy => true
+
+  def total_cost
+    total = (cabin*25)+(camp*20)+(day_full_weekend*15)+(day_partial_weekend*5)  
+    if total > 100 then adjusted_total = 100 else adjusted_total = total end
+    if created_at > '2012-12-21 11:23:44 -0500' then adjusted_total = (adjusted_total+5) end
+    if contribution then adjusted_total = (adjusted_total+contribution) end
+    adjusted_total
+  end
+
+  def paypal_url(return_url) 
+    values = { 
+      :business => 'seller_1356111168_biz@gmail.com',
+      :cmd => '_cart',
+      :upload => 1,
+      :return => return_url,
+      :invoice => 1
+    }
+
+    values.merge!({ 
+      "amount_1" => total_cost,
+      "item_name_1" => id,
+      "item_number_1" => id,
+      "quantity_1" => '1'
+    })
+
+    "https://www.sandbox.paypal.com/cgi-bin/webscr?" + values.to_query
+  end
+
+  def family_name
+     names = self.people.map(&:last_name)
+     names.uniq!
+     names.join("/") 
+  end
+  def family_folks
+    names = self.people.map(&:first_name)
+    names.join(",\s")
+  end
+  def total_camping
+    fam = Family.find(:all).map(&:camp)
+    fam.sum
+  end
+  def total_cabin
+    fam = Family.find(:all).map(&:cabin)
+    fam.sum
+  end
+  def total_day_full_weekend
+    fam = Family.find(:all).map(&:day_full_weekend)
+    fam.sum
+  end
+  def total_day_partial_weekend
+    fam = Family.find(:all).map(&:day_partial_weekend)
+    fam.sum
+  end
+end

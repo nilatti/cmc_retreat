@@ -1,0 +1,16 @@
+class MakeFieldsNotNull < ActiveRecord::Migration
+  change_column :families, :cabin, :integer, :null => false
+  change_column :families, :camp, :integer, :null => false 
+  change_column :families, :day_full_weekend, :integer, :null => false    
+  change_column :families, :day_partial_weekend, :integer, :null => false  
+  change_column :families, :friday_supper, :integer, :null => false   
+  change_column :families, :friday_snack, :integer, :null => false
+  change_column :families, :saturday_breakfast, :integer, :null => false
+  change_column :families, :saturday_lunch, :integer, :null => false
+  change_column :families, :saturday_dinner, :integer, :null => false
+  change_column :families, :saturday_snack, :integer, :null => false
+  change_column :families, :sunday_breakfast, :integer, :null => false
+  change_column :families, :sunday_lunch, :integer, :null => false
+
+
+end

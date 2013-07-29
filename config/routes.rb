@@ -1,4 +1,4 @@
-Myapp::Application.routes.draw do
+Retreat::Application.routes.draw do
   root :to => 'families#welcome'
 
   resources :volunteer_tasks

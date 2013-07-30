@@ -50,7 +50,7 @@ class FamiliesController < ApplicationController
     
     respond_to do |format|
       if @family.save
-        unless @family.email.nil?
+        unless @family.email.blank?
           UserMailer.confirmation_email(@family).deliver
         end
         format.html { redirect_to @family, notice: 'Family was successfully created.' }

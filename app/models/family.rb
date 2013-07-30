@@ -47,7 +47,7 @@ class Family < ActiveRecord::Base
   end
 
   def family_url
-    num = self.id.to_s
+    num = self.id.to_s	
     url = "http://cmcva.org/retreat/families/" + num
   end
 end

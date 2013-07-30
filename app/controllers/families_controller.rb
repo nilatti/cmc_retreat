@@ -50,7 +50,7 @@ class FamiliesController < ApplicationController
     
     respond_to do |format|
       if @family.save
-        UserMailer.confirmation_email(@family).deliver
+        UserMailer.confirmation_email.deliver
         format.html { redirect_to @family, notice: 'Family was successfully created.' }
         format.json { render json: @family, status: :created, location: @family }
       else

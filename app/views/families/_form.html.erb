@@ -45,8 +45,8 @@
   <h3><%= f.inputs :name => "Additional costs", :id => "additional" do %></h3>
     <%= f.input :contribution, :label => "If you would like to make an additional contribution to help needy families attend the retreat, please list the amount (in dollars) here:" %>
   <% end %>
-  <%= f.input :food_items, :collection => FoodItem.where('food_items.requested >= food_items.food_promises_count').order('food_items.requested DESC'), :member_label => :description %>
-  <%= f.input :volunteer_tasks, :collection => VolunteerTask.where('volunteer_tasks.requested >= volunteer_tasks.volunteer_promises_count').order('volunteer_tasks.time'), :member_label => :job_label %>
+  <%= f.input :food_items, :collection => FoodItem.where('food_items.requested > food_items.food_promises_count').order('food_items.requested DESC'), :member_label => :description %>
+  <%= f.input :volunteer_tasks, :collection => VolunteerTask.where('volunteer_tasks.requested > volunteer_tasks.volunteer_promises_count').order('volunteer_tasks.time'), :member_label => :job_label %>
 <%= f.actions %>
 <% end %>
 

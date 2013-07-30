@@ -6,7 +6,7 @@ class Family < ActiveRecord::Base
 
   has_many :volunteer_promises
   has_many :volunteer_tasks, :through => :volunteer_promises
-   attr_accessible :allergies, :cabin, :camp, :contribution, :day_full_weekend, :day_partial_weekend, :friday_snack, :friday_supper, :late_fee, :paid, :saturday_breakfast, :saturday_dinner, :saturday_lunch, :saturday_snack, :sunday_breakfast, :sunday_lunch, :people_attributes, :food_item_ids, :email
+   attr_accessible :allergies, :cabin, :camp, :contribution, :day_full_weekend, :day_partial_weekend, :friday_snack, :friday_supper, :late_fee, :paid, :saturday_breakfast, :saturday_dinner, :saturday_lunch, :saturday_snack, :sunday_breakfast, :sunday_lunch, :people_attributes, :food_item_ids, :email, :volunteer_task_ids
   accepts_nested_attributes_for :people, :allow_destroy => true
 
   def total_cost
@@ -47,6 +47,7 @@ class Family < ActiveRecord::Base
   end
 
   def family_url
-    url = "http://cmcva.org/retreat/families/" + self.id
+    num = self.id.to_s
+    url = "http://cmcva.org/retreat/families/" + num
   end
 end

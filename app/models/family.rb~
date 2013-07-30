@@ -1,9 +1,12 @@
 class Family < ActiveRecord::Base
- 
+  validates :people, :presence => {:message => 'You must enter at least one family member.'}
   has_many :people
   has_many :food_promises
   has_many :food_items, :through => :food_promises
-   attr_accessible :allergies, :cabin, :camp, :contribution, :day_full_weekend, :day_partial_weekend, :friday_snack, :friday_supper, :late_fee, :paid, :saturday_breakfast, :saturday_dinner, :saturday_lunch, :saturday_snack, :sunday_breakfast, :sunday_lunch, :people_attributes, :food_item_ids
+
+  has_many :volunteer_promises
+  has_many :volunteer_tasks, :through => :volunteer_promises
+   attr_accessible :allergies, :cabin, :camp, :contribution, :day_full_weekend, :day_partial_weekend, :friday_snack, :friday_supper, :late_fee, :paid, :saturday_breakfast, :saturday_dinner, :saturday_lunch, :saturday_snack, :sunday_breakfast, :sunday_lunch, :people_attributes, :food_item_ids, :email, :volunteer_task_ids
   accepts_nested_attributes_for :people, :allow_destroy => true
 
   def total_cost
@@ -42,20 +45,9 @@ class Family < ActiveRecord::Base
     names = self.people.map(&:first_name)
     names.join(",\s")
   end
-  def total_camping
-    fam = Family.find(:all).map(&:camp)
-    fam.sum
-  end
-  def total_cabin
-    fam = Family.find(:all).map(&:cabin)
-    fam.sum
-  end
-  def total_day_full_weekend
-    fam = Family.find(:all).map(&:day_full_weekend)
-    fam.sum
-  end
-  def total_day_partial_weekend
-    fam = Family.find(:all).map(&:day_partial_weekend)
-    fam.sum
+
+  def family_url
+    num = self.id.to_str
+    url = "http://cmcva.org/retreat/families/" + num
   end
 end

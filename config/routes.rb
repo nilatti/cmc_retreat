@@ -17,6 +17,8 @@ Retreat::Application.routes.draw do
       put :paid
     end
   end
+
+  resources :people
   
   resource :food_committee, :controller => :food_committee
   resource :retreat_committee, :controller => :retreat_committee

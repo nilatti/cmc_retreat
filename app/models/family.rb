@@ -1,6 +1,6 @@
 class Family < ActiveRecord::Base
   validates :people, :presence => {:message => 'You must enter at least one family member.'}
-  has_many :people
+  has_many :people, :dependent => :destroy
   has_many :food_promises
   has_many :food_items, :through => :food_promises
 

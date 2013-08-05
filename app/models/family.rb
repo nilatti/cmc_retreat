@@ -12,7 +12,7 @@ class Family < ActiveRecord::Base
   def total_cost
     total = (cabin*25)+(camp*20)+(day_full_weekend*15)+(day_partial_weekend*5)  
     if total > 100 then adjusted_total = 100 else adjusted_total = total end
-    if created_at > '2012-12-21 11:23:44 -0500' then adjusted_total = (adjusted_total+5) end
+    if created_at > '2013-09-01 00:00:00 -0500' then adjusted_total = (adjusted_total+5) end
     if contribution then adjusted_total = (adjusted_total+contribution) end
     adjusted_total
   end
@@ -49,5 +49,21 @@ class Family < ActiveRecord::Base
   def family_url
     num = self.id.to_s	
     url = "http://retreat.herokuapp.com/families/" + num
+  end
+
+  def num_kids
+    n = 0
+    self.people.each do |person| 
+      unless person.age.blank? 
+        if person.age < 6
+          n += 1
+        end
+      end
+    end
+    return n
+  end
+
+  def total_registrants
+    total = self.cabin + self.camp + day_full_weekend + day_partial_weekend
   end
 end

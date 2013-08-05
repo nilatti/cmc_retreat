@@ -42853,3 +42853,1922 @@ Served asset /registrar.js - 304 Not Modified (0ms)
 
 Started GET "/assets/volunteer_tasks.js?body=1" for 127.0.0.1 at 2013-07-29 22:03:16 -0400
 Served asset /volunteer_tasks.js - 304 Not Modified (0ms)
+
+
+Started GET "/families" for 127.0.0.1 at 2013-08-05 07:34:24 -0400
+Connecting to database specified by database.yml
+
+SyntaxError (/home/alisha/code/retreat/app/models/family.rb:56: syntax error, unexpected '|', expecting '}'
+    self.people.each do {|person| if person.age < 6, n += 1}
+                          ^
+/home/alisha/code/retreat/app/models/family.rb:56: syntax error, unexpected ',', expecting keyword_then or ';' or '\n'
+    self.people.each do {|person| if person.age < 6, n += 1}
+                                                    ^
+/home/alisha/code/retreat/app/models/family.rb:56: syntax error, unexpected '}', expecting keyword_end
+/home/alisha/code/retreat/app/models/family.rb:60: syntax error, unexpected $end, expecting keyword_end):
+  app/controllers/families_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /home/alisha/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.7ms)
+  Rendered /home/alisha/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (18.9ms)
+  Rendered /home/alisha/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (56.7ms)
+
+
+Started GET "/families" for 127.0.0.1 at 2013-08-05 07:34:52 -0400
+
+SyntaxError (/home/alisha/code/retreat/app/models/family.rb:56: syntax error, unexpected ',', expecting keyword_then or ';' or '\n'
+    self.people.each {|person| if person.age < 6, n += 1}
+                                                 ^):
+  app/controllers/families_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /home/alisha/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.3ms)
+  Rendered /home/alisha/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.8ms)
+  Rendered /home/alisha/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (15.0ms)
+
+
+Started GET "/families" for 127.0.0.1 at 2013-08-05 07:35:07 -0400
+
+SyntaxError (/home/alisha/code/retreat/app/models/family.rb:56: syntax error, unexpected '}', expecting keyword_end
+/home/alisha/code/retreat/app/models/family.rb:59: syntax error, unexpected keyword_end, expecting '}'):
+  app/controllers/families_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /home/alisha/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.4ms)
+  Rendered /home/alisha/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.7ms)
+  Rendered /home/alisha/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (15.2ms)
+
+
+Started GET "/families" for 127.0.0.1 at 2013-08-05 07:36:16 -0400
+Processing by FamiliesController#index as HTML
+  [1m[36mFamily Load (12.4ms)[0m  [1mSELECT `families`.* FROM `families` [0m
+  [1m[35mPerson Load (17.9ms)[0m  SELECT `people`.* FROM `people` WHERE `people`.`family_id` = 3
+  [1m[36mPerson Load (0.9ms)[0m  [1mSELECT `people`.* FROM `people` WHERE `people`.`family_id` = 5[0m
+  [1m[35mPerson Load (0.8ms)[0m  SELECT `people`.* FROM `people` WHERE `people`.`family_id` = 6
+  [1m[36mPerson Load (0.7ms)[0m  [1mSELECT `people`.* FROM `people` WHERE `people`.`family_id` = 7[0m
+  [1m[35mPerson Load (0.6ms)[0m  SELECT `people`.* FROM `people` WHERE `people`.`family_id` = 8
+  [1m[36mPerson Load (0.6ms)[0m  [1mSELECT `people`.* FROM `people` WHERE `people`.`family_id` = 9[0m
+  [1m[35mPerson Load (0.5ms)[0m  SELECT `people`.* FROM `people` WHERE `people`.`family_id` = 10
+  [1m[36mPerson Load (0.5ms)[0m  [1mSELECT `people`.* FROM `people` WHERE `people`.`family_id` = 11[0m
+  [1m[35mPerson Load (0.6ms)[0m  SELECT `people`.* FROM `people` WHERE `people`.`family_id` = 12
+  [1m[36mPerson Load (0.6ms)[0m  [1mSELECT `people`.* FROM `people` WHERE `people`.`family_id` = 13[0m
+  Rendered families/index.html.erb within layouts/application (328.4ms)
+Completed 200 OK in 1009ms (Views: 711.1ms | ActiveRecord: 115.2ms)
+
+
+Started GET "/assets/families.css?body=1" for 127.0.0.1 at 2013-08-05 07:36:17 -0400
+Served asset /families.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/food_committee.css?body=1" for 127.0.0.1 at 2013-08-05 07:36:17 -0400
+Served asset /food_committee.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/registrar.css?body=1" for 127.0.0.1 at 2013-08-05 07:36:18 -0400
+Served asset /registrar.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/food_items.css?body=1" for 127.0.0.1 at 2013-08-05 07:36:18 -0400
+Served asset /food_items.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/people.css?body=1" for 127.0.0.1 at 2013-08-05 07:36:18 -0400
+Served asset /people.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/my_formtastic_changes.css?body=1" for 127.0.0.1 at 2013-08-05 07:36:18 -0400
+Served asset /my_formtastic_changes.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/formtastic.css?body=1" for 127.0.0.1 at 2013-08-05 07:36:18 -0400
+Served asset /formtastic.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-08-05 07:36:18 -0400
+Served asset /scaffolds.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/volunteer_tasks.css?body=1" for 127.0.0.1 at 2013-08-05 07:36:18 -0400
+Served asset /volunteer_tasks.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-05 07:36:18 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (91ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-05 07:36:18 -0400
+Served asset /jquery.js - 304 Not Modified (17ms)
+
+
+Started GET "/assets/jquery.purr.js?body=1" for 127.0.0.1 at 2013-08-05 07:36:18 -0400
+Served asset /jquery.purr.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/best_in_place.js?body=1" for 127.0.0.1 at 2013-08-05 07:36:18 -0400
+Served asset /best_in_place.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/jquery_nested_form.js?body=1" for 127.0.0.1 at 2013-08-05 07:36:18 -0400
+Served asset /jquery_nested_form.js - 304 Not Modified (12ms)
+
+
+Started GET "/assets/families.js?body=1" for 127.0.0.1 at 2013-08-05 07:36:18 -0400
+Served asset /families.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/food_committee.js?body=1" for 127.0.0.1 at 2013-08-05 07:36:18 -0400
+Served asset /food_committee.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/food_items.js?body=1" for 127.0.0.1 at 2013-08-05 07:36:18 -0400
+Served asset /food_items.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/people.js?body=1" for 127.0.0.1 at 2013-08-05 07:36:18 -0400
+Served asset /people.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/registrar.js?body=1" for 127.0.0.1 at 2013-08-05 07:36:18 -0400
+Served asset /registrar.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/volunteer_tasks.js?body=1" for 127.0.0.1 at 2013-08-05 07:36:18 -0400
+Served asset /volunteer_tasks.js - 304 Not Modified (2ms)
+
+
+Started GET "/families/8" for 127.0.0.1 at 2013-08-05 07:36:22 -0400
+Processing by FamiliesController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[35mFamily Load (0.9ms)[0m  SELECT `families`.* FROM `families` WHERE `families`.`id` = 8 LIMIT 1
+  Rendered families/show.html.erb within layouts/application (115.0ms)
+Completed 500 Internal Server Error in 125ms
+
+ActionView::Template::Error (undefined local variable or method `created_at' for #<#<Class:0x0000000429e4c0>:0x000000045cb300>):
+    2: <p>
+    3:   <b>Cost for retreat:</b>
+    4: $<%= @family.total_cost %><br />
+    5: <% if created_at > '2012-12-21 11:23:44 -0500' %><i>includes a late fee of $5</i><% end %>
+    6: </p>
+    7: <%= @family.num_kids %>
+    8: <p>
+  app/views/families/show.html.erb:5:in `_app_views_families_show_html_erb__2965147975241947961_36587740'
+  app/controllers/families_controller.rb:20:in `show'
+
+
+  Rendered /home/alisha/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.5ms)
+  Rendered /home/alisha/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.9ms)
+  Rendered /home/alisha/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (15.3ms)
+
+
+Started GET "/families/3" for 127.0.0.1 at 2013-08-05 07:36:52 -0400
+Processing by FamiliesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mFamily Load (0.6ms)[0m  [1mSELECT `families`.* FROM `families` WHERE `families`.`id` = 3 LIMIT 1[0m
+  [1m[35mPerson Load (0.3ms)[0m  SELECT `people`.* FROM `people` WHERE `people`.`family_id` = 3
+  Rendered families/show.html.erb within layouts/application (10.8ms)
+Completed 500 Internal Server Error in 16ms
+
+ActionView::Template::Error (undefined method `<' for nil:NilClass):
+    4: $<%= @family.total_cost %><br />
+    5: <% if @family.created_at > '2012-12-21 11:23:44 -0500' %><i>includes a late fee of $5</i><% end %>
+    6: </p>
+    7: <%= @family.num_kids %>
+    8: <p>
+    9:   <% if @family.email %>
+    10:     <b>Email address:</b>
+  app/models/family.rb:57:in `block in num_kids'
+  app/models/family.rb:56:in `num_kids'
+  app/views/families/show.html.erb:7:in `_app_views_families_show_html_erb__2965147975241947961_34913680'
+  app/controllers/families_controller.rb:20:in `show'
+
+
+  Rendered /home/alisha/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.4ms)
+  Rendered /home/alisha/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.9ms)
+  Rendered /home/alisha/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (15.3ms)
+
+
+Started GET "/families/12" for 127.0.0.1 at 2013-08-05 07:36:55 -0400
+Processing by FamiliesController#show as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mFamily Load (0.7ms)[0m  [1mSELECT `families`.* FROM `families` WHERE `families`.`id` = 12 LIMIT 1[0m
+  [1m[35mPerson Load (0.3ms)[0m  SELECT `people`.* FROM `people` WHERE `people`.`family_id` = 12
+  Rendered families/show.html.erb within layouts/application (6.7ms)
+Completed 500 Internal Server Error in 13ms
+
+ActionView::Template::Error (undefined method `<' for nil:NilClass):
+    4: $<%= @family.total_cost %><br />
+    5: <% if @family.created_at > '2012-12-21 11:23:44 -0500' %><i>includes a late fee of $5</i><% end %>
+    6: </p>
+    7: <%= @family.num_kids %>
+    8: <p>
+    9:   <% if @family.email %>
+    10:     <b>Email address:</b>
+  app/models/family.rb:57:in `block in num_kids'
+  app/models/family.rb:56:in `num_kids'
+  app/views/families/show.html.erb:7:in `_app_views_families_show_html_erb__2965147975241947961_34913680'
+  app/controllers/families_controller.rb:20:in `show'
+
+
+  Rendered /home/alisha/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.4ms)
+  Rendered /home/alisha/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.9ms)
+  Rendered /home/alisha/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (15.3ms)
+
+
+Started GET "/families/12" for 127.0.0.1 at 2013-08-05 07:39:45 -0400
+Processing by FamiliesController#show as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mFamily Load (0.4ms)[0m  [1mSELECT `families`.* FROM `families` WHERE `families`.`id` = 12 LIMIT 1[0m
+  [1m[35mPerson Load (0.4ms)[0m  SELECT `people`.* FROM `people` WHERE `people`.`family_id` = 12
+  Rendered families/show.html.erb within layouts/application (38.4ms)
+Completed 500 Internal Server Error in 90ms
+
+ActionView::Template::Error (undefined method `empty' for -1:Fixnum):
+    4: $<%= @family.total_cost %><br />
+    5: <% if @family.created_at > '2012-12-21 11:23:44 -0500' %><i>includes a late fee of $5</i><% end %>
+    6: </p>
+    7: <%= @family.num_kids %>
+    8: <p>
+    9:   <% if @family.email %>
+    10:     <b>Email address:</b>
+  app/models/family.rb:57:in `block in num_kids'
+  app/models/family.rb:56:in `num_kids'
+  app/views/families/show.html.erb:7:in `_app_views_families_show_html_erb__2965147975241947961_34913680'
+  app/controllers/families_controller.rb:20:in `show'
+
+
+  Rendered /home/alisha/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.4ms)
+  Rendered /home/alisha/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.8ms)
+  Rendered /home/alisha/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (14.8ms)
+
+
+Started GET "/families/12" for 127.0.0.1 at 2013-08-05 07:40:16 -0400
+Processing by FamiliesController#show as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mFamily Load (0.4ms)[0m  [1mSELECT `families`.* FROM `families` WHERE `families`.`id` = 12 LIMIT 1[0m
+  [1m[35mPerson Load (0.2ms)[0m  SELECT `people`.* FROM `people` WHERE `people`.`family_id` = 12
+  [1m[36mFoodItem Load (1.0ms)[0m  [1mSELECT `food_items`.* FROM `food_items` INNER JOIN `food_promises` ON `food_items`.`id` = `food_promises`.`food_item_id` WHERE `food_promises`.`family_id` = 12[0m
+  Rendered families/show.html.erb within layouts/application (286.2ms)
+Completed 200 OK in 361ms (Views: 301.7ms | ActiveRecord: 11.5ms)
+
+
+Started GET "/assets/families.css?body=1" for 127.0.0.1 at 2013-08-05 07:40:17 -0400
+Served asset /families.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/food_committee.css?body=1" for 127.0.0.1 at 2013-08-05 07:40:17 -0400
+Served asset /food_committee.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/food_items.css?body=1" for 127.0.0.1 at 2013-08-05 07:40:17 -0400
+Served asset /food_items.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/formtastic.css?body=1" for 127.0.0.1 at 2013-08-05 07:40:17 -0400
+Served asset /formtastic.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/my_formtastic_changes.css?body=1" for 127.0.0.1 at 2013-08-05 07:40:17 -0400
+Served asset /my_formtastic_changes.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/people.css?body=1" for 127.0.0.1 at 2013-08-05 07:40:17 -0400
+Served asset /people.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/registrar.css?body=1" for 127.0.0.1 at 2013-08-05 07:40:17 -0400
+Served asset /registrar.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-08-05 07:40:17 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/volunteer_tasks.css?body=1" for 127.0.0.1 at 2013-08-05 07:40:17 -0400
+Served asset /volunteer_tasks.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-05 07:40:17 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-05 07:40:17 -0400
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.purr.js?body=1" for 127.0.0.1 at 2013-08-05 07:40:17 -0400
+Served asset /jquery.purr.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/best_in_place.js?body=1" for 127.0.0.1 at 2013-08-05 07:40:17 -0400
+Served asset /best_in_place.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_nested_form.js?body=1" for 127.0.0.1 at 2013-08-05 07:40:17 -0400
+Served asset /jquery_nested_form.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/families.js?body=1" for 127.0.0.1 at 2013-08-05 07:40:17 -0400
+Served asset /families.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/food_committee.js?body=1" for 127.0.0.1 at 2013-08-05 07:40:17 -0400
+Served asset /food_committee.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/food_items.js?body=1" for 127.0.0.1 at 2013-08-05 07:40:17 -0400
+Served asset /food_items.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/people.js?body=1" for 127.0.0.1 at 2013-08-05 07:40:17 -0400
+Served asset /people.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/volunteer_tasks.js?body=1" for 127.0.0.1 at 2013-08-05 07:40:17 -0400
+Served asset /volunteer_tasks.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/registrar.js?body=1" for 127.0.0.1 at 2013-08-05 07:40:17 -0400
+Served asset /registrar.js - 304 Not Modified (0ms)
+
+
+Started GET "/families/5" for 127.0.0.1 at 2013-08-05 07:40:31 -0400
+Processing by FamiliesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mFamily Load (0.6ms)[0m  SELECT `families`.* FROM `families` WHERE `families`.`id` = 5 LIMIT 1
+  [1m[36mPerson Load (0.3ms)[0m  [1mSELECT `people`.* FROM `people` WHERE `people`.`family_id` = 5[0m
+  [1m[35mFoodItem Load (0.9ms)[0m  SELECT `food_items`.* FROM `food_items` INNER JOIN `food_promises` ON `food_items`.`id` = `food_promises`.`food_item_id` WHERE `food_promises`.`family_id` = 5
+  Rendered families/show.html.erb within layouts/application (24.7ms)
+Completed 200 OK in 47ms (Views: 42.7ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/assets/families.css?body=1" for 127.0.0.1 at 2013-08-05 07:40:31 -0400
+Served asset /families.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/formtastic.css?body=1" for 127.0.0.1 at 2013-08-05 07:40:31 -0400
+Served asset /formtastic.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/people.css?body=1" for 127.0.0.1 at 2013-08-05 07:40:31 -0400
+Served asset /people.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/food_committee.css?body=1" for 127.0.0.1 at 2013-08-05 07:40:31 -0400
+Served asset /food_committee.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/food_items.css?body=1" for 127.0.0.1 at 2013-08-05 07:40:31 -0400
+Served asset /food_items.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/my_formtastic_changes.css?body=1" for 127.0.0.1 at 2013-08-05 07:40:31 -0400
+Served asset /my_formtastic_changes.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/registrar.css?body=1" for 127.0.0.1 at 2013-08-05 07:40:31 -0400
+Served asset /registrar.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-08-05 07:40:31 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/volunteer_tasks.css?body=1" for 127.0.0.1 at 2013-08-05 07:40:31 -0400
+Served asset /volunteer_tasks.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-05 07:40:31 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-05 07:40:31 -0400
+Served asset /jquery.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/jquery.purr.js?body=1" for 127.0.0.1 at 2013-08-05 07:40:31 -0400
+Served asset /jquery.purr.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/best_in_place.js?body=1" for 127.0.0.1 at 2013-08-05 07:40:31 -0400
+Served asset /best_in_place.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_nested_form.js?body=1" for 127.0.0.1 at 2013-08-05 07:40:31 -0400
+Served asset /jquery_nested_form.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/families.js?body=1" for 127.0.0.1 at 2013-08-05 07:40:31 -0400
+Served asset /families.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/food_committee.js?body=1" for 127.0.0.1 at 2013-08-05 07:40:31 -0400
+Served asset /food_committee.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/people.js?body=1" for 127.0.0.1 at 2013-08-05 07:40:31 -0400
+Served asset /people.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/food_items.js?body=1" for 127.0.0.1 at 2013-08-05 07:40:31 -0400
+Served asset /food_items.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/registrar.js?body=1" for 127.0.0.1 at 2013-08-05 07:40:32 -0400
+Served asset /registrar.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/volunteer_tasks.js?body=1" for 127.0.0.1 at 2013-08-05 07:40:32 -0400
+Served asset /volunteer_tasks.js - 304 Not Modified (0ms)
+
+
+Started GET "/families/5" for 127.0.0.1 at 2013-08-05 07:40:44 -0400
+Processing by FamiliesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mFamily Load (0.4ms)[0m  [1mSELECT `families`.* FROM `families` WHERE `families`.`id` = 5 LIMIT 1[0m
+  [1m[35mPerson Load (0.2ms)[0m  SELECT `people`.* FROM `people` WHERE `people`.`family_id` = 5
+  Rendered families/show.html.erb within layouts/application (43.1ms)
+Completed 500 Internal Server Error in 105ms
+
+ActionView::Template::Error (undefined method `>' for nil:NilClass):
+    4: $<%= @family.total_cost %><br />
+    5: <% if @family.created_at > '2012-12-21 11:23:44 -0500' %><i>includes a late fee of $5</i><% end %>
+    6: </p>
+    7: <%= @family.num_kids %>
+    8: <p>
+    9:   <% if @family.email %>
+    10:     <b>Email address:</b>
+  app/models/family.rb:57:in `block in num_kids'
+  app/models/family.rb:56:in `num_kids'
+  app/views/families/show.html.erb:7:in `_app_views_families_show_html_erb__2965147975241947961_34913680'
+  app/controllers/families_controller.rb:20:in `show'
+
+
+  Rendered /home/alisha/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.8ms)
+  Rendered /home/alisha/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.9ms)
+  Rendered /home/alisha/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (16.0ms)
+
+
+Started GET "/families/5" for 127.0.0.1 at 2013-08-05 07:41:06 -0400
+Processing by FamiliesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mFamily Load (0.3ms)[0m  [1mSELECT `families`.* FROM `families` WHERE `families`.`id` = 5 LIMIT 1[0m
+  [1m[35mPerson Load (0.2ms)[0m  SELECT `people`.* FROM `people` WHERE `people`.`family_id` = 5
+  [1m[36mFoodItem Load (0.3ms)[0m  [1mSELECT `food_items`.* FROM `food_items` INNER JOIN `food_promises` ON `food_items`.`id` = `food_promises`.`food_item_id` WHERE `food_promises`.`family_id` = 5[0m
+  Rendered families/show.html.erb within layouts/application (138.4ms)
+Completed 200 OK in 214ms (Views: 150.3ms | ActiveRecord: 11.6ms)
+
+
+Started GET "/assets/families.css?body=1" for 127.0.0.1 at 2013-08-05 07:41:06 -0400
+Served asset /families.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/food_committee.css?body=1" for 127.0.0.1 at 2013-08-05 07:41:06 -0400
+Served asset /food_committee.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/food_items.css?body=1" for 127.0.0.1 at 2013-08-05 07:41:06 -0400
+Served asset /food_items.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/formtastic.css?body=1" for 127.0.0.1 at 2013-08-05 07:41:06 -0400
+Served asset /formtastic.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/my_formtastic_changes.css?body=1" for 127.0.0.1 at 2013-08-05 07:41:06 -0400
+Served asset /my_formtastic_changes.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/people.css?body=1" for 127.0.0.1 at 2013-08-05 07:41:06 -0400
+Served asset /people.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-08-05 07:41:06 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/registrar.css?body=1" for 127.0.0.1 at 2013-08-05 07:41:06 -0400
+Served asset /registrar.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/volunteer_tasks.css?body=1" for 127.0.0.1 at 2013-08-05 07:41:06 -0400
+Served asset /volunteer_tasks.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-05 07:41:06 -0400
+Served asset /jquery.js - 304 Not Modified (14ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-05 07:41:06 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.purr.js?body=1" for 127.0.0.1 at 2013-08-05 07:41:06 -0400
+Served asset /jquery.purr.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/best_in_place.js?body=1" for 127.0.0.1 at 2013-08-05 07:41:06 -0400
+Served asset /best_in_place.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/families.js?body=1" for 127.0.0.1 at 2013-08-05 07:41:06 -0400
+Served asset /families.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_nested_form.js?body=1" for 127.0.0.1 at 2013-08-05 07:41:06 -0400
+Served asset /jquery_nested_form.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/food_committee.js?body=1" for 127.0.0.1 at 2013-08-05 07:41:06 -0400
+Served asset /food_committee.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/food_items.js?body=1" for 127.0.0.1 at 2013-08-05 07:41:06 -0400
+Served asset /food_items.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/people.js?body=1" for 127.0.0.1 at 2013-08-05 07:41:06 -0400
+Served asset /people.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/volunteer_tasks.js?body=1" for 127.0.0.1 at 2013-08-05 07:41:07 -0400
+Served asset /volunteer_tasks.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/registrar.js?body=1" for 127.0.0.1 at 2013-08-05 07:41:07 -0400
+Served asset /registrar.js - 304 Not Modified (0ms)
+
+
+Started GET "/people" for 127.0.0.1 at 2013-08-05 07:41:33 -0400
+
+ActionController::RoutingError (No route matches [GET] "/people"):
+  actionpack (3.2.9) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.9) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.9) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.9) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.9) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.9) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.9) lib/rails/engine.rb:479:in `call'
+  railties (3.2.9) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.9) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/alisha/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/alisha/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/alisha/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/alisha/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.5ms)
+
+
+Started GET "/families/8" for 127.0.0.1 at 2013-08-05 07:41:44 -0400
+Processing by FamiliesController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[35mFamily Load (0.3ms)[0m  SELECT `families`.* FROM `families` WHERE `families`.`id` = 8 LIMIT 1
+  [1m[36mPerson Load (0.3ms)[0m  [1mSELECT `people`.* FROM `people` WHERE `people`.`family_id` = 8[0m
+  [1m[35mFoodItem Load (0.7ms)[0m  SELECT `food_items`.* FROM `food_items` INNER JOIN `food_promises` ON `food_items`.`id` = `food_promises`.`food_item_id` WHERE `food_promises`.`family_id` = 8
+  Rendered families/show.html.erb within layouts/application (10.7ms)
+Completed 200 OK in 37ms (Views: 33.7ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/families.css?body=1" for 127.0.0.1 at 2013-08-05 07:41:44 -0400
+Served asset /families.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/formtastic.css?body=1" for 127.0.0.1 at 2013-08-05 07:41:44 -0400
+Served asset /formtastic.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/food_items.css?body=1" for 127.0.0.1 at 2013-08-05 07:41:44 -0400
+Served asset /food_items.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/food_committee.css?body=1" for 127.0.0.1 at 2013-08-05 07:41:44 -0400
+Served asset /food_committee.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/my_formtastic_changes.css?body=1" for 127.0.0.1 at 2013-08-05 07:41:44 -0400
+Served asset /my_formtastic_changes.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/people.css?body=1" for 127.0.0.1 at 2013-08-05 07:41:44 -0400
+Served asset /people.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/registrar.css?body=1" for 127.0.0.1 at 2013-08-05 07:41:44 -0400
+Served asset /registrar.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-08-05 07:41:44 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/volunteer_tasks.css?body=1" for 127.0.0.1 at 2013-08-05 07:41:44 -0400
+Served asset /volunteer_tasks.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-05 07:41:44 -0400
+Served asset /jquery.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/jquery.purr.js?body=1" for 127.0.0.1 at 2013-08-05 07:41:44 -0400
+Served asset /jquery.purr.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-05 07:41:44 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/best_in_place.js?body=1" for 127.0.0.1 at 2013-08-05 07:41:44 -0400
+Served asset /best_in_place.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/jquery_nested_form.js?body=1" for 127.0.0.1 at 2013-08-05 07:41:44 -0400
+Served asset /jquery_nested_form.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/families.js?body=1" for 127.0.0.1 at 2013-08-05 07:41:44 -0400
+Served asset /families.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/food_committee.js?body=1" for 127.0.0.1 at 2013-08-05 07:41:44 -0400
+Served asset /food_committee.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/food_items.js?body=1" for 127.0.0.1 at 2013-08-05 07:41:44 -0400
+Served asset /food_items.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/people.js?body=1" for 127.0.0.1 at 2013-08-05 07:41:44 -0400
+Served asset /people.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/registrar.js?body=1" for 127.0.0.1 at 2013-08-05 07:41:44 -0400
+Served asset /registrar.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/volunteer_tasks.js?body=1" for 127.0.0.1 at 2013-08-05 07:41:44 -0400
+Served asset /volunteer_tasks.js - 304 Not Modified (0ms)
+
+
+Started GET "/families/new" for 127.0.0.1 at 2013-08-05 07:42:15 -0400
+Processing by FamiliesController#new as HTML
+  [1m[36mFoodItem Load (0.7ms)[0m  [1mSELECT `food_items`.* FROM `food_items` WHERE (food_items.requested > food_items.food_promises_count) ORDER BY food_items.requested DESC[0m
+  [1m[35m (0.9ms)[0m  SELECT `food_items`.id FROM `food_items` INNER JOIN `food_promises` ON `food_items`.`id` = `food_promises`.`food_item_id` WHERE `food_promises`.`family_id` IS NULL
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `food_items`.id FROM `food_items` INNER JOIN `food_promises` ON `food_items`.`id` = `food_promises`.`food_item_id` WHERE `food_promises`.`family_id` IS NULL[0m
+  [1m[35mVolunteerTask Load (0.9ms)[0m  SELECT `volunteer_tasks`.* FROM `volunteer_tasks` WHERE (volunteer_tasks.requested > volunteer_tasks.volunteer_promises_count) ORDER BY volunteer_tasks.time
+  [1m[36m (0.6ms)[0m  [1mSELECT `volunteer_tasks`.id FROM `volunteer_tasks` INNER JOIN `volunteer_promises` ON `volunteer_tasks`.`id` = `volunteer_promises`.`volunteer_task_id` WHERE `volunteer_promises`.`family_id` IS NULL[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `volunteer_tasks`.id FROM `volunteer_tasks` INNER JOIN `volunteer_promises` ON `volunteer_tasks`.`id` = `volunteer_promises`.`volunteer_task_id` WHERE `volunteer_promises`.`family_id` IS NULL
+DEPRECATION WARNING: The :value option is deprecated in favour of `:input_html => { :value => '...'}` and will be removed in the next version. (called from block (4 levels) in _app_views_families__form_html_erb__3117023806527683877_35970120 at /home/alisha/code/retreat/app/views/families/_form.html.erb:16)
+  Rendered families/_form.html.erb (743.0ms)
+  Rendered families/new.html.erb within layouts/application (778.6ms)
+Completed 200 OK in 799ms (Views: 789.5ms | ActiveRecord: 7.9ms)
+
+
+Started GET "/assets/families.css?body=1" for 127.0.0.1 at 2013-08-05 07:42:16 -0400
+Served asset /families.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/food_committee.css?body=1" for 127.0.0.1 at 2013-08-05 07:42:16 -0400
+Served asset /food_committee.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/food_items.css?body=1" for 127.0.0.1 at 2013-08-05 07:42:16 -0400
+Served asset /food_items.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/formtastic.css?body=1" for 127.0.0.1 at 2013-08-05 07:42:16 -0400
+Served asset /formtastic.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/my_formtastic_changes.css?body=1" for 127.0.0.1 at 2013-08-05 07:42:16 -0400
+Served asset /my_formtastic_changes.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/people.css?body=1" for 127.0.0.1 at 2013-08-05 07:42:16 -0400
+Served asset /people.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-08-05 07:42:16 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/registrar.css?body=1" for 127.0.0.1 at 2013-08-05 07:42:16 -0400
+Served asset /registrar.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/volunteer_tasks.css?body=1" for 127.0.0.1 at 2013-08-05 07:42:16 -0400
+Served asset /volunteer_tasks.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-05 07:42:16 -0400
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.purr.js?body=1" for 127.0.0.1 at 2013-08-05 07:42:16 -0400
+Served asset /jquery.purr.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-05 07:42:16 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/best_in_place.js?body=1" for 127.0.0.1 at 2013-08-05 07:42:16 -0400
+Served asset /best_in_place.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_nested_form.js?body=1" for 127.0.0.1 at 2013-08-05 07:42:16 -0400
+Served asset /jquery_nested_form.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/food_items.js?body=1" for 127.0.0.1 at 2013-08-05 07:42:16 -0400
+Served asset /food_items.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/food_committee.js?body=1" for 127.0.0.1 at 2013-08-05 07:42:16 -0400
+Served asset /food_committee.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/families.js?body=1" for 127.0.0.1 at 2013-08-05 07:42:16 -0400
+Served asset /families.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/people.js?body=1" for 127.0.0.1 at 2013-08-05 07:42:16 -0400
+Served asset /people.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/volunteer_tasks.js?body=1" for 127.0.0.1 at 2013-08-05 07:42:16 -0400
+Served asset /volunteer_tasks.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/registrar.js?body=1" for 127.0.0.1 at 2013-08-05 07:42:16 -0400
+Served asset /registrar.js - 304 Not Modified (0ms)
+
+
+Started POST "/families" for 127.0.0.1 at 2013-08-05 07:42:40 -0400
+Processing by FamiliesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"kxZEX2FphKf1jdUVlJR/v65tlvQxcdd0Q1j8dj8HxjU=", "family"=>{"people_attributes"=>{"1375702938484"=>{"first_name"=>"Test", "last_name"=>"Test", "age"=>"1", "family_id"=>"", "_destroy"=>"false"}, "1375702938499"=>{"first_name"=>"Testing", "last_name"=>"test", "age"=>"8", "family_id"=>"", "_destroy"=>"false"}, "1375702954915"=>{"first_name"=>"mom", "last_name"=>"test", "age"=>"", "family_id"=>"", "_destroy"=>"false"}, "1375702954923"=>{"first_name"=>"", "last_name"=>"", "age"=>"", "family_id"=>"", "_destroy"=>"false"}}, "email"=>"", "cabin"=>"0", "camp"=>"0", "day_full_weekend"=>"0", "day_partial_weekend"=>"0", "friday_supper"=>"0", "friday_snack"=>"0", "saturday_breakfast"=>"0", "saturday_lunch"=>"0", "saturday_dinner"=>"0", "saturday_snack"=>"0", "sunday_breakfast"=>"0", "sunday_lunch"=>"0", "allergies"=>"", "contribution"=>"", "food_item_ids"=>["", ""], "volunteer_task_ids"=>["", ""]}, "commit"=>"Create Family"}
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (22.8ms)[0m  INSERT INTO `families` (`allergies`, `cabin`, `camp`, `contribution`, `created_at`, `day_full_weekend`, `day_partial_weekend`, `email`, `friday_snack`, `friday_supper`, `paid`, `saturday_breakfast`, `saturday_dinner`, `saturday_lunch`, `saturday_snack`, `sunday_breakfast`, `sunday_lunch`, `updated_at`) VALUES ('', 0, 0, NULL, '2013-08-05 11:42:40', 0, 0, '', 0, 0, NULL, 0, 0, 0, 0, 0, 0, '2013-08-05 11:42:40')
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO `people` (`age`, `created_at`, `family_id`, `first_name`, `last_name`, `updated_at`) VALUES (1, '2013-08-05 11:42:41', 14, 'Test', 'Test', '2013-08-05 11:42:41')[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `people` (`age`, `created_at`, `family_id`, `first_name`, `last_name`, `updated_at`) VALUES (8, '2013-08-05 11:42:41', 14, 'Testing', 'test', '2013-08-05 11:42:41')
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO `people` (`age`, `created_at`, `family_id`, `first_name`, `last_name`, `updated_at`) VALUES (NULL, '2013-08-05 11:42:41', 14, 'mom', 'test', '2013-08-05 11:42:41')[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO `people` (`age`, `created_at`, `family_id`, `first_name`, `last_name`, `updated_at`) VALUES (NULL, '2013-08-05 11:42:41', 14, '', '', '2013-08-05 11:42:41')
+  [1m[36m (142.7ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/families/14
+Completed 302 Found in 302ms (ActiveRecord: 167.6ms)
+
+
+Started GET "/families/14" for 127.0.0.1 at 2013-08-05 07:42:41 -0400
+Processing by FamiliesController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[35mFamily Load (0.8ms)[0m  SELECT `families`.* FROM `families` WHERE `families`.`id` = 14 LIMIT 1
+  [1m[36mPerson Load (0.6ms)[0m  [1mSELECT `people`.* FROM `people` WHERE `people`.`family_id` = 14[0m
+  [1m[35mFoodItem Load (0.8ms)[0m  SELECT `food_items`.* FROM `food_items` INNER JOIN `food_promises` ON `food_items`.`id` = `food_promises`.`food_item_id` WHERE `food_promises`.`family_id` = 14
+  Rendered families/show.html.erb within layouts/application (11.9ms)
+Completed 200 OK in 33ms (Views: 28.1ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/assets/families.css?body=1" for 127.0.0.1 at 2013-08-05 07:42:41 -0400
+Served asset /families.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/food_committee.css?body=1" for 127.0.0.1 at 2013-08-05 07:42:41 -0400
+Served asset /food_committee.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/my_formtastic_changes.css?body=1" for 127.0.0.1 at 2013-08-05 07:42:41 -0400
+Served asset /my_formtastic_changes.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/food_items.css?body=1" for 127.0.0.1 at 2013-08-05 07:42:41 -0400
+Served asset /food_items.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/formtastic.css?body=1" for 127.0.0.1 at 2013-08-05 07:42:41 -0400
+Served asset /formtastic.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/people.css?body=1" for 127.0.0.1 at 2013-08-05 07:42:41 -0400
+Served asset /people.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/registrar.css?body=1" for 127.0.0.1 at 2013-08-05 07:42:41 -0400
+Served asset /registrar.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-08-05 07:42:41 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/volunteer_tasks.css?body=1" for 127.0.0.1 at 2013-08-05 07:42:41 -0400
+Served asset /volunteer_tasks.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-05 07:42:41 -0400
+Served asset /jquery.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-05 07:42:41 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.purr.js?body=1" for 127.0.0.1 at 2013-08-05 07:42:41 -0400
+Served asset /jquery.purr.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/best_in_place.js?body=1" for 127.0.0.1 at 2013-08-05 07:42:41 -0400
+Served asset /best_in_place.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_nested_form.js?body=1" for 127.0.0.1 at 2013-08-05 07:42:41 -0400
+Served asset /jquery_nested_form.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/families.js?body=1" for 127.0.0.1 at 2013-08-05 07:42:41 -0400
+Served asset /families.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/food_committee.js?body=1" for 127.0.0.1 at 2013-08-05 07:42:41 -0400
+Served asset /food_committee.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/food_items.js?body=1" for 127.0.0.1 at 2013-08-05 07:42:41 -0400
+Served asset /food_items.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/people.js?body=1" for 127.0.0.1 at 2013-08-05 07:42:41 -0400
+Served asset /people.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/registrar.js?body=1" for 127.0.0.1 at 2013-08-05 07:42:41 -0400
+Served asset /registrar.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/volunteer_tasks.js?body=1" for 127.0.0.1 at 2013-08-05 07:42:41 -0400
+Served asset /volunteer_tasks.js - 304 Not Modified (0ms)
+
+
+Started GET "/families/14" for 127.0.0.1 at 2013-08-05 07:45:38 -0400
+Processing by FamiliesController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mFamily Load (0.2ms)[0m  [1mSELECT `families`.* FROM `families` WHERE `families`.`id` = 14 LIMIT 1[0m
+  [1m[35mPerson Load (0.3ms)[0m  SELECT `people`.* FROM `people` WHERE `people`.`family_id` = 14
+  [1m[36mFoodItem Load (0.2ms)[0m  [1mSELECT `food_items`.* FROM `food_items` INNER JOIN `food_promises` ON `food_items`.`id` = `food_promises`.`food_item_id` WHERE `food_promises`.`family_id` = 14[0m
+  Rendered families/show.html.erb within layouts/application (70.6ms)
+Completed 200 OK in 200ms (Views: 84.0ms | ActiveRecord: 9.6ms)
+
+
+Started GET "/assets/food_committee.css?body=1" for 127.0.0.1 at 2013-08-05 07:45:38 -0400
+Served asset /food_committee.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/food_items.css?body=1" for 127.0.0.1 at 2013-08-05 07:45:38 -0400
+Served asset /food_items.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/families.css?body=1" for 127.0.0.1 at 2013-08-05 07:45:38 -0400
+Served asset /families.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/formtastic.css?body=1" for 127.0.0.1 at 2013-08-05 07:45:38 -0400
+Served asset /formtastic.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/my_formtastic_changes.css?body=1" for 127.0.0.1 at 2013-08-05 07:45:38 -0400
+Served asset /my_formtastic_changes.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/people.css?body=1" for 127.0.0.1 at 2013-08-05 07:45:38 -0400
+Served asset /people.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/registrar.css?body=1" for 127.0.0.1 at 2013-08-05 07:45:38 -0400
+Served asset /registrar.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-08-05 07:45:38 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/volunteer_tasks.css?body=1" for 127.0.0.1 at 2013-08-05 07:45:38 -0400
+Served asset /volunteer_tasks.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-05 07:45:38 -0400
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-05 07:45:38 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/best_in_place.js?body=1" for 127.0.0.1 at 2013-08-05 07:45:38 -0400
+Served asset /best_in_place.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.purr.js?body=1" for 127.0.0.1 at 2013-08-05 07:45:38 -0400
+Served asset /jquery.purr.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_nested_form.js?body=1" for 127.0.0.1 at 2013-08-05 07:45:38 -0400
+Served asset /jquery_nested_form.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/families.js?body=1" for 127.0.0.1 at 2013-08-05 07:45:39 -0400
+Served asset /families.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/food_committee.js?body=1" for 127.0.0.1 at 2013-08-05 07:45:39 -0400
+Served asset /food_committee.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/food_items.js?body=1" for 127.0.0.1 at 2013-08-05 07:45:39 -0400
+Served asset /food_items.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/people.js?body=1" for 127.0.0.1 at 2013-08-05 07:45:39 -0400
+Served asset /people.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/registrar.js?body=1" for 127.0.0.1 at 2013-08-05 07:45:39 -0400
+Served asset /registrar.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/volunteer_tasks.js?body=1" for 127.0.0.1 at 2013-08-05 07:45:39 -0400
+Served asset /volunteer_tasks.js - 304 Not Modified (0ms)
+
+
+Started GET "/families/14/edit" for 127.0.0.1 at 2013-08-05 07:45:45 -0400
+Processing by FamiliesController#edit as HTML
+  Parameters: {"id"=>"14"}
+  [1m[35mFamily Load (0.4ms)[0m  SELECT `families`.* FROM `families` WHERE `families`.`id` = 14 LIMIT 1
+  [1m[36mPerson Load (0.3ms)[0m  [1mSELECT `people`.* FROM `people` WHERE `people`.`family_id` = 14[0m
+DEPRECATION WARNING: The :value option is deprecated in favour of `:input_html => { :value => '...'}` and will be removed in the next version. (called from block (4 levels) in _app_views_families__form_html_erb__3117023806527683877_35970120 at /home/alisha/code/retreat/app/views/families/_form.html.erb:16)
+DEPRECATION WARNING: The :value option is deprecated in favour of `:input_html => { :value => '...'}` and will be removed in the next version. (called from block (4 levels) in _app_views_families__form_html_erb__3117023806527683877_35970120 at /home/alisha/code/retreat/app/views/families/_form.html.erb:16)
+DEPRECATION WARNING: The :value option is deprecated in favour of `:input_html => { :value => '...'}` and will be removed in the next version. (called from block (4 levels) in _app_views_families__form_html_erb__3117023806527683877_35970120 at /home/alisha/code/retreat/app/views/families/_form.html.erb:16)
+DEPRECATION WARNING: The :value option is deprecated in favour of `:input_html => { :value => '...'}` and will be removed in the next version. (called from block (4 levels) in _app_views_families__form_html_erb__3117023806527683877_35970120 at /home/alisha/code/retreat/app/views/families/_form.html.erb:16)
+  [1m[35mFoodItem Load (0.3ms)[0m  SELECT `food_items`.* FROM `food_items` WHERE (food_items.requested > food_items.food_promises_count) ORDER BY food_items.requested DESC
+  [1m[36m (0.9ms)[0m  [1mSELECT `food_items`.id FROM `food_items` INNER JOIN `food_promises` ON `food_items`.`id` = `food_promises`.`food_item_id` WHERE `food_promises`.`family_id` = 14[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `food_items`.id FROM `food_items` INNER JOIN `food_promises` ON `food_items`.`id` = `food_promises`.`food_item_id` WHERE `food_promises`.`family_id` = 14
+  [1m[36mFoodItem Load (0.3ms)[0m  [1mSELECT `food_items`.* FROM `food_items` INNER JOIN `food_promises` ON `food_items`.`id` = `food_promises`.`food_item_id` WHERE `food_promises`.`family_id` = 14[0m
+  [1m[35mVolunteerTask Load (0.4ms)[0m  SELECT `volunteer_tasks`.* FROM `volunteer_tasks` WHERE (volunteer_tasks.requested > volunteer_tasks.volunteer_promises_count) ORDER BY volunteer_tasks.time
+  [1m[36m (0.7ms)[0m  [1mSELECT `volunteer_tasks`.id FROM `volunteer_tasks` INNER JOIN `volunteer_promises` ON `volunteer_tasks`.`id` = `volunteer_promises`.`volunteer_task_id` WHERE `volunteer_promises`.`family_id` = 14[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `volunteer_tasks`.id FROM `volunteer_tasks` INNER JOIN `volunteer_promises` ON `volunteer_tasks`.`id` = `volunteer_promises`.`volunteer_task_id` WHERE `volunteer_promises`.`family_id` = 14
+  [1m[36mVolunteerTask Load (0.7ms)[0m  [1mSELECT `volunteer_tasks`.* FROM `volunteer_tasks` INNER JOIN `volunteer_promises` ON `volunteer_tasks`.`id` = `volunteer_promises`.`volunteer_task_id` WHERE `volunteer_promises`.`family_id` = 14[0m
+DEPRECATION WARNING: The :value option is deprecated in favour of `:input_html => { :value => '...'}` and will be removed in the next version. (called from block (4 levels) in _app_views_families__form_html_erb__3117023806527683877_35970120 at /home/alisha/code/retreat/app/views/families/_form.html.erb:16)
+  Rendered families/_form.html.erb (350.8ms)
+  Rendered families/edit.html.erb within layouts/application (355.0ms)
+Completed 200 OK in 442ms (Views: 429.9ms | ActiveRecord: 9.3ms)
+
+
+Started GET "/assets/families.css?body=1" for 127.0.0.1 at 2013-08-05 07:45:46 -0400
+Served asset /families.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/formtastic.css?body=1" for 127.0.0.1 at 2013-08-05 07:45:46 -0400
+Served asset /formtastic.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/my_formtastic_changes.css?body=1" for 127.0.0.1 at 2013-08-05 07:45:46 -0400
+Served asset /my_formtastic_changes.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/people.css?body=1" for 127.0.0.1 at 2013-08-05 07:45:46 -0400
+Served asset /people.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/food_committee.css?body=1" for 127.0.0.1 at 2013-08-05 07:45:46 -0400
+Served asset /food_committee.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/food_items.css?body=1" for 127.0.0.1 at 2013-08-05 07:45:46 -0400
+Served asset /food_items.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/registrar.css?body=1" for 127.0.0.1 at 2013-08-05 07:45:46 -0400
+Served asset /registrar.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-08-05 07:45:46 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/volunteer_tasks.css?body=1" for 127.0.0.1 at 2013-08-05 07:45:46 -0400
+Served asset /volunteer_tasks.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-05 07:45:46 -0400
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-05 07:45:46 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.purr.js?body=1" for 127.0.0.1 at 2013-08-05 07:45:46 -0400
+Served asset /jquery.purr.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_nested_form.js?body=1" for 127.0.0.1 at 2013-08-05 07:45:46 -0400
+Served asset /jquery_nested_form.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/best_in_place.js?body=1" for 127.0.0.1 at 2013-08-05 07:45:46 -0400
+Served asset /best_in_place.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/families.js?body=1" for 127.0.0.1 at 2013-08-05 07:45:46 -0400
+Served asset /families.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/food_committee.js?body=1" for 127.0.0.1 at 2013-08-05 07:45:46 -0400
+Served asset /food_committee.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/food_items.js?body=1" for 127.0.0.1 at 2013-08-05 07:45:46 -0400
+Served asset /food_items.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/people.js?body=1" for 127.0.0.1 at 2013-08-05 07:45:46 -0400
+Served asset /people.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/registrar.js?body=1" for 127.0.0.1 at 2013-08-05 07:45:46 -0400
+Served asset /registrar.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/volunteer_tasks.js?body=1" for 127.0.0.1 at 2013-08-05 07:45:46 -0400
+Served asset /volunteer_tasks.js - 304 Not Modified (0ms)
+
+
+Started PUT "/families/14" for 127.0.0.1 at 2013-08-05 07:45:56 -0400
+Processing by FamiliesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"kxZEX2FphKf1jdUVlJR/v65tlvQxcdd0Q1j8dj8HxjU=", "family"=>{"people_attributes"=>{"0"=>{"first_name"=>"Test", "last_name"=>"Test", "age"=>"1", "family_id"=>"14", "_destroy"=>"false", "id"=>"29"}, "1"=>{"first_name"=>"Testing", "last_name"=>"test", "age"=>"8", "family_id"=>"14", "_destroy"=>"false", "id"=>"30"}, "2"=>{"first_name"=>"mom", "last_name"=>"test", "age"=>"", "family_id"=>"14", "_destroy"=>"false", "id"=>"31"}, "3"=>{"first_name"=>"", "last_name"=>"", "age"=>"", "family_id"=>"14", "_destroy"=>"false", "id"=>"32"}}, "email"=>"", "cabin"=>"3", "camp"=>"5", "day_full_weekend"=>"0", "day_partial_weekend"=>"0", "friday_supper"=>"0", "friday_snack"=>"0", "saturday_breakfast"=>"0", "saturday_lunch"=>"0", "saturday_dinner"=>"0", "saturday_snack"=>"0", "sunday_breakfast"=>"0", "sunday_lunch"=>"0", "allergies"=>"", "contribution"=>"", "food_item_ids"=>["", ""], "volunteer_task_ids"=>["", ""]}, "commit"=>"Update Family", "id"=>"14"}
+  [1m[35mFamily Load (0.2ms)[0m  SELECT `families`.* FROM `families` WHERE `families`.`id` = 14 LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mFoodItem Load (0.6ms)[0m  SELECT `food_items`.* FROM `food_items` INNER JOIN `food_promises` ON `food_items`.`id` = `food_promises`.`food_item_id` WHERE `food_promises`.`family_id` = 14
+  [1m[36mVolunteerTask Load (0.5ms)[0m  [1mSELECT `volunteer_tasks`.* FROM `volunteer_tasks` INNER JOIN `volunteer_promises` ON `volunteer_tasks`.`id` = `volunteer_promises`.`volunteer_task_id` WHERE `volunteer_promises`.`family_id` = 14[0m
+  [1m[35mPerson Load (0.9ms)[0m  SELECT `people`.* FROM `people` WHERE `people`.`family_id` = 14 AND `people`.`id` IN (29, 30, 31, 32)
+  [1m[36mPerson Load (0.6ms)[0m  [1mSELECT `people`.* FROM `people` WHERE `people`.`family_id` = 14[0m
+  [1m[35m (28.1ms)[0m  UPDATE `families` SET `cabin` = 3, `camp` = 5, `updated_at` = '2013-08-05 11:45:57' WHERE `families`.`id` = 14
+  [1m[36m (143.1ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/families/14
+Completed 302 Found in 249ms (ActiveRecord: 174.2ms)
+
+
+Started GET "/families/14" for 127.0.0.1 at 2013-08-05 07:45:57 -0400
+Processing by FamiliesController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[35mFamily Load (0.6ms)[0m  SELECT `families`.* FROM `families` WHERE `families`.`id` = 14 LIMIT 1
+  [1m[36mPerson Load (0.3ms)[0m  [1mSELECT `people`.* FROM `people` WHERE `people`.`family_id` = 14[0m
+  [1m[35mFoodItem Load (0.2ms)[0m  SELECT `food_items`.* FROM `food_items` INNER JOIN `food_promises` ON `food_items`.`id` = `food_promises`.`food_item_id` WHERE `food_promises`.`family_id` = 14
+  Rendered families/show.html.erb within layouts/application (14.7ms)
+Completed 200 OK in 37ms (Views: 33.1ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/families.css?body=1" for 127.0.0.1 at 2013-08-05 07:45:57 -0400
+Served asset /families.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/food_items.css?body=1" for 127.0.0.1 at 2013-08-05 07:45:57 -0400
+Served asset /food_items.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/my_formtastic_changes.css?body=1" for 127.0.0.1 at 2013-08-05 07:45:57 -0400
+Served asset /my_formtastic_changes.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/people.css?body=1" for 127.0.0.1 at 2013-08-05 07:45:57 -0400
+Served asset /people.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/formtastic.css?body=1" for 127.0.0.1 at 2013-08-05 07:45:57 -0400
+Served asset /formtastic.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/food_committee.css?body=1" for 127.0.0.1 at 2013-08-05 07:45:57 -0400
+Served asset /food_committee.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/registrar.css?body=1" for 127.0.0.1 at 2013-08-05 07:45:57 -0400
+Served asset /registrar.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/volunteer_tasks.css?body=1" for 127.0.0.1 at 2013-08-05 07:45:57 -0400
+Served asset /volunteer_tasks.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-08-05 07:45:57 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-05 07:45:57 -0400
+Served asset /jquery.js - 304 Not Modified (11ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-05 07:45:57 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.purr.js?body=1" for 127.0.0.1 at 2013-08-05 07:45:57 -0400
+Served asset /jquery.purr.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/best_in_place.js?body=1" for 127.0.0.1 at 2013-08-05 07:45:57 -0400
+Served asset /best_in_place.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/families.js?body=1" for 127.0.0.1 at 2013-08-05 07:45:57 -0400
+Served asset /families.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_nested_form.js?body=1" for 127.0.0.1 at 2013-08-05 07:45:57 -0400
+Served asset /jquery_nested_form.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/food_committee.js?body=1" for 127.0.0.1 at 2013-08-05 07:45:57 -0400
+Served asset /food_committee.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/food_items.js?body=1" for 127.0.0.1 at 2013-08-05 07:45:57 -0400
+Served asset /food_items.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/people.js?body=1" for 127.0.0.1 at 2013-08-05 07:45:57 -0400
+Served asset /people.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/registrar.js?body=1" for 127.0.0.1 at 2013-08-05 07:45:57 -0400
+Served asset /registrar.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/volunteer_tasks.js?body=1" for 127.0.0.1 at 2013-08-05 07:45:57 -0400
+Served asset /volunteer_tasks.js - 304 Not Modified (0ms)
+
+
+Started GET "/families/14" for 127.0.0.1 at 2013-08-05 07:51:24 -0400
+Processing by FamiliesController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mFamily Load (0.5ms)[0m  [1mSELECT `families`.* FROM `families` WHERE `families`.`id` = 14 LIMIT 1[0m
+  [1m[35m (33.7ms)[0m  SELECT COUNT(*) FROM `people` WHERE `people`.`family_id` = 14
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM `people` WHERE `people`.`family_id` = 14[0m
+  [1m[35mPerson Load (0.2ms)[0m  SELECT `people`.* FROM `people` WHERE `people`.`family_id` = 14
+  [1m[36mFoodItem Load (0.2ms)[0m  [1mSELECT `food_items`.* FROM `food_items` INNER JOIN `food_promises` ON `food_items`.`id` = `food_promises`.`food_item_id` WHERE `food_promises`.`family_id` = 14[0m
+  Rendered families/show.html.erb within layouts/application (130.8ms)
+Completed 200 OK in 155ms (Views: 118.3ms | ActiveRecord: 34.6ms)
+
+
+Started GET "/assets/families.css?body=1" for 127.0.0.1 at 2013-08-05 07:51:25 -0400
+Served asset /families.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/food_committee.css?body=1" for 127.0.0.1 at 2013-08-05 07:51:25 -0400
+Served asset /food_committee.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/food_items.css?body=1" for 127.0.0.1 at 2013-08-05 07:51:25 -0400
+Served asset /food_items.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/my_formtastic_changes.css?body=1" for 127.0.0.1 at 2013-08-05 07:51:25 -0400
+Served asset /my_formtastic_changes.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/formtastic.css?body=1" for 127.0.0.1 at 2013-08-05 07:51:25 -0400
+Served asset /formtastic.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/registrar.css?body=1" for 127.0.0.1 at 2013-08-05 07:51:25 -0400
+Served asset /registrar.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/people.css?body=1" for 127.0.0.1 at 2013-08-05 07:51:25 -0400
+Served asset /people.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-08-05 07:51:25 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/volunteer_tasks.css?body=1" for 127.0.0.1 at 2013-08-05 07:51:25 -0400
+Served asset /volunteer_tasks.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-05 07:51:25 -0400
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-05 07:51:25 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.purr.js?body=1" for 127.0.0.1 at 2013-08-05 07:51:25 -0400
+Served asset /jquery.purr.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/best_in_place.js?body=1" for 127.0.0.1 at 2013-08-05 07:51:25 -0400
+Served asset /best_in_place.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_nested_form.js?body=1" for 127.0.0.1 at 2013-08-05 07:51:25 -0400
+Served asset /jquery_nested_form.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/families.js?body=1" for 127.0.0.1 at 2013-08-05 07:51:25 -0400
+Served asset /families.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/food_committee.js?body=1" for 127.0.0.1 at 2013-08-05 07:51:25 -0400
+Served asset /food_committee.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/food_items.js?body=1" for 127.0.0.1 at 2013-08-05 07:51:25 -0400
+Served asset /food_items.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/people.js?body=1" for 127.0.0.1 at 2013-08-05 07:51:25 -0400
+Served asset /people.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/volunteer_tasks.js?body=1" for 127.0.0.1 at 2013-08-05 07:51:25 -0400
+Served asset /volunteer_tasks.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/registrar.js?body=1" for 127.0.0.1 at 2013-08-05 07:51:25 -0400
+Served asset /registrar.js - 304 Not Modified (0ms)
+
+
+Started GET "/families/14/edit" for 127.0.0.1 at 2013-08-05 07:51:32 -0400
+Processing by FamiliesController#edit as HTML
+  Parameters: {"id"=>"14"}
+  [1m[35mFamily Load (0.2ms)[0m  SELECT `families`.* FROM `families` WHERE `families`.`id` = 14 LIMIT 1
+  [1m[36mPerson Load (0.2ms)[0m  [1mSELECT `people`.* FROM `people` WHERE `people`.`family_id` = 14[0m
+DEPRECATION WARNING: The :value option is deprecated in favour of `:input_html => { :value => '...'}` and will be removed in the next version. (called from block (4 levels) in _app_views_families__form_html_erb__3117023806527683877_35970120 at /home/alisha/code/retreat/app/views/families/_form.html.erb:16)
+DEPRECATION WARNING: The :value option is deprecated in favour of `:input_html => { :value => '...'}` and will be removed in the next version. (called from block (4 levels) in _app_views_families__form_html_erb__3117023806527683877_35970120 at /home/alisha/code/retreat/app/views/families/_form.html.erb:16)
+DEPRECATION WARNING: The :value option is deprecated in favour of `:input_html => { :value => '...'}` and will be removed in the next version. (called from block (4 levels) in _app_views_families__form_html_erb__3117023806527683877_35970120 at /home/alisha/code/retreat/app/views/families/_form.html.erb:16)
+DEPRECATION WARNING: The :value option is deprecated in favour of `:input_html => { :value => '...'}` and will be removed in the next version. (called from block (4 levels) in _app_views_families__form_html_erb__3117023806527683877_35970120 at /home/alisha/code/retreat/app/views/families/_form.html.erb:16)
+  [1m[35mFoodItem Load (3.3ms)[0m  SELECT `food_items`.* FROM `food_items` WHERE (food_items.requested > food_items.food_promises_count) ORDER BY food_items.requested DESC
+  [1m[36m (0.3ms)[0m  [1mSELECT `food_items`.id FROM `food_items` INNER JOIN `food_promises` ON `food_items`.`id` = `food_promises`.`food_item_id` WHERE `food_promises`.`family_id` = 14[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `food_items`.id FROM `food_items` INNER JOIN `food_promises` ON `food_items`.`id` = `food_promises`.`food_item_id` WHERE `food_promises`.`family_id` = 14
+  [1m[36mFoodItem Load (0.3ms)[0m  [1mSELECT `food_items`.* FROM `food_items` INNER JOIN `food_promises` ON `food_items`.`id` = `food_promises`.`food_item_id` WHERE `food_promises`.`family_id` = 14[0m
+  [1m[35mVolunteerTask Load (0.2ms)[0m  SELECT `volunteer_tasks`.* FROM `volunteer_tasks` WHERE (volunteer_tasks.requested > volunteer_tasks.volunteer_promises_count) ORDER BY volunteer_tasks.time
+  [1m[36m (0.2ms)[0m  [1mSELECT `volunteer_tasks`.id FROM `volunteer_tasks` INNER JOIN `volunteer_promises` ON `volunteer_tasks`.`id` = `volunteer_promises`.`volunteer_task_id` WHERE `volunteer_promises`.`family_id` = 14[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `volunteer_tasks`.id FROM `volunteer_tasks` INNER JOIN `volunteer_promises` ON `volunteer_tasks`.`id` = `volunteer_promises`.`volunteer_task_id` WHERE `volunteer_promises`.`family_id` = 14
+  [1m[36mVolunteerTask Load (0.3ms)[0m  [1mSELECT `volunteer_tasks`.* FROM `volunteer_tasks` INNER JOIN `volunteer_promises` ON `volunteer_tasks`.`id` = `volunteer_promises`.`volunteer_task_id` WHERE `volunteer_promises`.`family_id` = 14[0m
+DEPRECATION WARNING: The :value option is deprecated in favour of `:input_html => { :value => '...'}` and will be removed in the next version. (called from block (4 levels) in _app_views_families__form_html_erb__3117023806527683877_35970120 at /home/alisha/code/retreat/app/views/families/_form.html.erb:16)
+  Rendered families/_form.html.erb (260.3ms)
+  Rendered families/edit.html.erb within layouts/application (263.3ms)
+Completed 200 OK in 286ms (Views: 278.6ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/assets/families.css?body=1" for 127.0.0.1 at 2013-08-05 07:51:32 -0400
+Served asset /families.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/food_committee.css?body=1" for 127.0.0.1 at 2013-08-05 07:51:33 -0400
+Served asset /food_committee.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/my_formtastic_changes.css?body=1" for 127.0.0.1 at 2013-08-05 07:51:33 -0400
+Served asset /my_formtastic_changes.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/food_items.css?body=1" for 127.0.0.1 at 2013-08-05 07:51:33 -0400
+Served asset /food_items.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/people.css?body=1" for 127.0.0.1 at 2013-08-05 07:51:33 -0400
+Served asset /people.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/formtastic.css?body=1" for 127.0.0.1 at 2013-08-05 07:51:33 -0400
+Served asset /formtastic.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/registrar.css?body=1" for 127.0.0.1 at 2013-08-05 07:51:33 -0400
+Served asset /registrar.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-08-05 07:51:33 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/volunteer_tasks.css?body=1" for 127.0.0.1 at 2013-08-05 07:51:33 -0400
+Served asset /volunteer_tasks.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-05 07:51:33 -0400
+Served asset /jquery.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-05 07:51:33 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/jquery.purr.js?body=1" for 127.0.0.1 at 2013-08-05 07:51:33 -0400
+Served asset /jquery.purr.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/best_in_place.js?body=1" for 127.0.0.1 at 2013-08-05 07:51:33 -0400
+Served asset /best_in_place.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_nested_form.js?body=1" for 127.0.0.1 at 2013-08-05 07:51:33 -0400
+Served asset /jquery_nested_form.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/families.js?body=1" for 127.0.0.1 at 2013-08-05 07:51:33 -0400
+Served asset /families.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/food_committee.js?body=1" for 127.0.0.1 at 2013-08-05 07:51:33 -0400
+Served asset /food_committee.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/food_items.js?body=1" for 127.0.0.1 at 2013-08-05 07:51:33 -0400
+Served asset /food_items.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/people.js?body=1" for 127.0.0.1 at 2013-08-05 07:51:33 -0400
+Served asset /people.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/registrar.js?body=1" for 127.0.0.1 at 2013-08-05 07:51:33 -0400
+Served asset /registrar.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/volunteer_tasks.js?body=1" for 127.0.0.1 at 2013-08-05 07:51:33 -0400
+Served asset /volunteer_tasks.js - 304 Not Modified (0ms)
+
+
+Started PUT "/families/14" for 127.0.0.1 at 2013-08-05 07:51:45 -0400
+Processing by FamiliesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"kxZEX2FphKf1jdUVlJR/v65tlvQxcdd0Q1j8dj8HxjU=", "family"=>{"people_attributes"=>{"0"=>{"first_name"=>"Test", "last_name"=>"Test", "age"=>"1", "family_id"=>"14", "_destroy"=>"false", "id"=>"29"}, "1"=>{"first_name"=>"Testing", "last_name"=>"test", "age"=>"8", "family_id"=>"14", "_destroy"=>"false", "id"=>"30"}, "2"=>{"first_name"=>"mom", "last_name"=>"test", "age"=>"", "family_id"=>"14", "_destroy"=>"false", "id"=>"31"}, "3"=>{"first_name"=>"", "last_name"=>"", "age"=>"", "family_id"=>"14", "_destroy"=>"false", "id"=>"32"}}, "email"=>"", "cabin"=>"1", "camp"=>"2", "day_full_weekend"=>"0", "day_partial_weekend"=>"0", "friday_supper"=>"0", "friday_snack"=>"0", "saturday_breakfast"=>"0", "saturday_lunch"=>"0", "saturday_dinner"=>"0", "saturday_snack"=>"0", "sunday_breakfast"=>"0", "sunday_lunch"=>"0", "allergies"=>"", "contribution"=>"", "food_item_ids"=>["", ""], "volunteer_task_ids"=>["", ""]}, "commit"=>"Update Family", "id"=>"14"}
+  [1m[35mFamily Load (0.3ms)[0m  SELECT `families`.* FROM `families` WHERE `families`.`id` = 14 LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mFoodItem Load (0.2ms)[0m  SELECT `food_items`.* FROM `food_items` INNER JOIN `food_promises` ON `food_items`.`id` = `food_promises`.`food_item_id` WHERE `food_promises`.`family_id` = 14
+  [1m[36mVolunteerTask Load (0.2ms)[0m  [1mSELECT `volunteer_tasks`.* FROM `volunteer_tasks` INNER JOIN `volunteer_promises` ON `volunteer_tasks`.`id` = `volunteer_promises`.`volunteer_task_id` WHERE `volunteer_promises`.`family_id` = 14[0m
+  [1m[35mPerson Load (0.3ms)[0m  SELECT `people`.* FROM `people` WHERE `people`.`family_id` = 14 AND `people`.`id` IN (29, 30, 31, 32)
+  [1m[36mPerson Load (0.3ms)[0m  [1mSELECT `people`.* FROM `people` WHERE `people`.`family_id` = 14[0m
+  [1m[35m (83.6ms)[0m  UPDATE `families` SET `cabin` = 1, `camp` = 2, `updated_at` = '2013-08-05 11:51:45' WHERE `families`.`id` = 14
+  [1m[36m (125.5ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/families/14
+Completed 302 Found in 234ms (ActiveRecord: 210.7ms)
+
+
+Started GET "/families/14" for 127.0.0.1 at 2013-08-05 07:51:45 -0400
+Processing by FamiliesController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[35mFamily Load (0.8ms)[0m  SELECT `families`.* FROM `families` WHERE `families`.`id` = 14 LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM `people` WHERE `people`.`family_id` = 14[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM `people` WHERE `people`.`family_id` = 14
+  [1m[36mPerson Load (0.4ms)[0m  [1mSELECT `people`.* FROM `people` WHERE `people`.`family_id` = 14[0m
+  [1m[35mFoodItem Load (0.4ms)[0m  SELECT `food_items`.* FROM `food_items` INNER JOIN `food_promises` ON `food_items`.`id` = `food_promises`.`food_item_id` WHERE `food_promises`.`family_id` = 14
+  Rendered families/show.html.erb within layouts/application (20.7ms)
+Completed 200 OK in 42ms (Views: 37.6ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/assets/families.css?body=1" for 127.0.0.1 at 2013-08-05 07:51:45 -0400
+Served asset /families.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/food_committee.css?body=1" for 127.0.0.1 at 2013-08-05 07:51:45 -0400
+Served asset /food_committee.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/my_formtastic_changes.css?body=1" for 127.0.0.1 at 2013-08-05 07:51:45 -0400
+Served asset /my_formtastic_changes.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/formtastic.css?body=1" for 127.0.0.1 at 2013-08-05 07:51:45 -0400
+Served asset /formtastic.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/people.css?body=1" for 127.0.0.1 at 2013-08-05 07:51:45 -0400
+Served asset /people.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/registrar.css?body=1" for 127.0.0.1 at 2013-08-05 07:51:45 -0400
+Served asset /registrar.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/food_items.css?body=1" for 127.0.0.1 at 2013-08-05 07:51:45 -0400
+Served asset /food_items.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-08-05 07:51:45 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-05 07:51:46 -0400
+Served asset /jquery.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/volunteer_tasks.css?body=1" for 127.0.0.1 at 2013-08-05 07:51:46 -0400
+Served asset /volunteer_tasks.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-05 07:51:46 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.purr.js?body=1" for 127.0.0.1 at 2013-08-05 07:51:46 -0400
+Served asset /jquery.purr.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/best_in_place.js?body=1" for 127.0.0.1 at 2013-08-05 07:51:46 -0400
+Served asset /best_in_place.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_nested_form.js?body=1" for 127.0.0.1 at 2013-08-05 07:51:46 -0400
+Served asset /jquery_nested_form.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/families.js?body=1" for 127.0.0.1 at 2013-08-05 07:51:46 -0400
+Served asset /families.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/food_committee.js?body=1" for 127.0.0.1 at 2013-08-05 07:51:46 -0400
+Served asset /food_committee.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/food_items.js?body=1" for 127.0.0.1 at 2013-08-05 07:51:46 -0400
+Served asset /food_items.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/people.js?body=1" for 127.0.0.1 at 2013-08-05 07:51:46 -0400
+Served asset /people.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/volunteer_tasks.js?body=1" for 127.0.0.1 at 2013-08-05 07:51:46 -0400
+Served asset /volunteer_tasks.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/registrar.js?body=1" for 127.0.0.1 at 2013-08-05 07:51:46 -0400
+Served asset /registrar.js - 304 Not Modified (0ms)
+
+
+Started GET "/families/14" for 127.0.0.1 at 2013-08-05 07:52:10 -0400
+Processing by FamiliesController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mFamily Load (0.2ms)[0m  [1mSELECT `families`.* FROM `families` WHERE `families`.`id` = 14 LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM `people` WHERE `people`.`family_id` = 14
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM `people` WHERE `people`.`family_id` = 14[0m
+  [1m[35mPerson Load (0.2ms)[0m  SELECT `people`.* FROM `people` WHERE `people`.`family_id` = 14
+  [1m[36mFoodItem Load (0.3ms)[0m  [1mSELECT `food_items`.* FROM `food_items` INNER JOIN `food_promises` ON `food_items`.`id` = `food_promises`.`food_item_id` WHERE `food_promises`.`family_id` = 14[0m
+  Rendered families/show.html.erb within layouts/application (16.8ms)
+Completed 200 OK in 107ms (Views: 104.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/families.css?body=1" for 127.0.0.1 at 2013-08-05 07:52:11 -0400
+Served asset /families.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/food_items.css?body=1" for 127.0.0.1 at 2013-08-05 07:52:11 -0400
+Served asset /food_items.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/food_committee.css?body=1" for 127.0.0.1 at 2013-08-05 07:52:11 -0400
+Served asset /food_committee.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/formtastic.css?body=1" for 127.0.0.1 at 2013-08-05 07:52:11 -0400
+Served asset /formtastic.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/my_formtastic_changes.css?body=1" for 127.0.0.1 at 2013-08-05 07:52:11 -0400
+Served asset /my_formtastic_changes.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/people.css?body=1" for 127.0.0.1 at 2013-08-05 07:52:11 -0400
+Served asset /people.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/registrar.css?body=1" for 127.0.0.1 at 2013-08-05 07:52:11 -0400
+Served asset /registrar.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-08-05 07:52:11 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/volunteer_tasks.css?body=1" for 127.0.0.1 at 2013-08-05 07:52:11 -0400
+Served asset /volunteer_tasks.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-05 07:52:11 -0400
+Served asset /jquery.js - 304 Not Modified (18ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-05 07:52:11 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.purr.js?body=1" for 127.0.0.1 at 2013-08-05 07:52:11 -0400
+Served asset /jquery.purr.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/best_in_place.js?body=1" for 127.0.0.1 at 2013-08-05 07:52:11 -0400
+Served asset /best_in_place.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/families.js?body=1" for 127.0.0.1 at 2013-08-05 07:52:11 -0400
+Served asset /families.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_nested_form.js?body=1" for 127.0.0.1 at 2013-08-05 07:52:11 -0400
+Served asset /jquery_nested_form.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/food_committee.js?body=1" for 127.0.0.1 at 2013-08-05 07:52:11 -0400
+Served asset /food_committee.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/people.js?body=1" for 127.0.0.1 at 2013-08-05 07:52:11 -0400
+Served asset /people.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/registrar.js?body=1" for 127.0.0.1 at 2013-08-05 07:52:11 -0400
+Served asset /registrar.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/food_items.js?body=1" for 127.0.0.1 at 2013-08-05 07:52:11 -0400
+Served asset /food_items.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/volunteer_tasks.js?body=1" for 127.0.0.1 at 2013-08-05 07:52:11 -0400
+Served asset /volunteer_tasks.js - 304 Not Modified (0ms)
+
+
+Started GET "/families/14" for 127.0.0.1 at 2013-08-05 07:52:46 -0400
+Processing by FamiliesController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[35mFamily Load (0.3ms)[0m  SELECT `families`.* FROM `families` WHERE `families`.`id` = 14 LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM `people` WHERE `people`.`family_id` = 14[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM `people` WHERE `people`.`family_id` = 14
+  [1m[36mPerson Load (0.4ms)[0m  [1mSELECT `people`.* FROM `people` WHERE `people`.`family_id` = 14[0m
+  [1m[35mFoodItem Load (0.2ms)[0m  SELECT `food_items`.* FROM `food_items` INNER JOIN `food_promises` ON `food_items`.`id` = `food_promises`.`food_item_id` WHERE `food_promises`.`family_id` = 14
+  Rendered families/show.html.erb within layouts/application (16.1ms)
+Completed 200 OK in 39ms (Views: 35.0ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/food_committee.css?body=1" for 127.0.0.1 at 2013-08-05 07:52:47 -0400
+Served asset /food_committee.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/food_items.css?body=1" for 127.0.0.1 at 2013-08-05 07:52:47 -0400
+Served asset /food_items.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/families.css?body=1" for 127.0.0.1 at 2013-08-05 07:52:47 -0400
+Served asset /families.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/formtastic.css?body=1" for 127.0.0.1 at 2013-08-05 07:52:47 -0400
+Served asset /formtastic.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/my_formtastic_changes.css?body=1" for 127.0.0.1 at 2013-08-05 07:52:47 -0400
+Served asset /my_formtastic_changes.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/people.css?body=1" for 127.0.0.1 at 2013-08-05 07:52:47 -0400
+Served asset /people.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/registrar.css?body=1" for 127.0.0.1 at 2013-08-05 07:52:47 -0400
+Served asset /registrar.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-08-05 07:52:47 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/volunteer_tasks.css?body=1" for 127.0.0.1 at 2013-08-05 07:52:47 -0400
+Served asset /volunteer_tasks.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-05 07:52:47 -0400
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-05 07:52:47 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.purr.js?body=1" for 127.0.0.1 at 2013-08-05 07:52:47 -0400
+Served asset /jquery.purr.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/best_in_place.js?body=1" for 127.0.0.1 at 2013-08-05 07:52:47 -0400
+Served asset /best_in_place.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/food_items.js?body=1" for 127.0.0.1 at 2013-08-05 07:52:47 -0400
+Served asset /food_items.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/food_committee.js?body=1" for 127.0.0.1 at 2013-08-05 07:52:47 -0400
+Served asset /food_committee.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/families.js?body=1" for 127.0.0.1 at 2013-08-05 07:52:47 -0400
+Served asset /families.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_nested_form.js?body=1" for 127.0.0.1 at 2013-08-05 07:52:47 -0400
+Served asset /jquery_nested_form.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/people.js?body=1" for 127.0.0.1 at 2013-08-05 07:52:47 -0400
+Served asset /people.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/registrar.js?body=1" for 127.0.0.1 at 2013-08-05 07:52:47 -0400
+Served asset /registrar.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/volunteer_tasks.js?body=1" for 127.0.0.1 at 2013-08-05 07:52:47 -0400
+Served asset /volunteer_tasks.js - 304 Not Modified (0ms)
+
+
+Started GET "/families/14" for 127.0.0.1 at 2013-08-05 07:56:19 -0400
+Processing by FamiliesController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mFamily Load (0.3ms)[0m  [1mSELECT `families`.* FROM `families` WHERE `families`.`id` = 14 LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM `people` WHERE `people`.`family_id` = 14
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM `people` WHERE `people`.`family_id` = 14[0m
+  [1m[35mPerson Load (0.3ms)[0m  SELECT `people`.* FROM `people` WHERE `people`.`family_id` = 14
+  [1m[36mFoodItem Load (0.3ms)[0m  [1mSELECT `food_items`.* FROM `food_items` INNER JOIN `food_promises` ON `food_items`.`id` = `food_promises`.`food_item_id` WHERE `food_promises`.`family_id` = 14[0m
+  Rendered families/show.html.erb within layouts/application (83.6ms)
+Completed 200 OK in 162ms (Views: 97.8ms | ActiveRecord: 12.1ms)
+
+
+Started GET "/assets/food_committee.css?body=1" for 127.0.0.1 at 2013-08-05 07:56:20 -0400
+Served asset /food_committee.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/families.css?body=1" for 127.0.0.1 at 2013-08-05 07:56:20 -0400
+Served asset /families.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/food_items.css?body=1" for 127.0.0.1 at 2013-08-05 07:56:20 -0400
+Served asset /food_items.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/my_formtastic_changes.css?body=1" for 127.0.0.1 at 2013-08-05 07:56:20 -0400
+Served asset /my_formtastic_changes.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/formtastic.css?body=1" for 127.0.0.1 at 2013-08-05 07:56:20 -0400
+Served asset /formtastic.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/registrar.css?body=1" for 127.0.0.1 at 2013-08-05 07:56:20 -0400
+Served asset /registrar.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/people.css?body=1" for 127.0.0.1 at 2013-08-05 07:56:20 -0400
+Served asset /people.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-08-05 07:56:20 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/volunteer_tasks.css?body=1" for 127.0.0.1 at 2013-08-05 07:56:20 -0400
+Served asset /volunteer_tasks.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-05 07:56:20 -0400
+Served asset /jquery.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-05 07:56:20 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.purr.js?body=1" for 127.0.0.1 at 2013-08-05 07:56:20 -0400
+Served asset /jquery.purr.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/best_in_place.js?body=1" for 127.0.0.1 at 2013-08-05 07:56:20 -0400
+Served asset /best_in_place.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_nested_form.js?body=1" for 127.0.0.1 at 2013-08-05 07:56:20 -0400
+Served asset /jquery_nested_form.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/families.js?body=1" for 127.0.0.1 at 2013-08-05 07:56:20 -0400
+Served asset /families.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/food_items.js?body=1" for 127.0.0.1 at 2013-08-05 07:56:20 -0400
+Served asset /food_items.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/food_committee.js?body=1" for 127.0.0.1 at 2013-08-05 07:56:20 -0400
+Served asset /food_committee.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/people.js?body=1" for 127.0.0.1 at 2013-08-05 07:56:20 -0400
+Served asset /people.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/registrar.js?body=1" for 127.0.0.1 at 2013-08-05 07:56:20 -0400
+Served asset /registrar.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/volunteer_tasks.js?body=1" for 127.0.0.1 at 2013-08-05 07:56:20 -0400
+Served asset /volunteer_tasks.js - 304 Not Modified (0ms)
+
+
+Started GET "/families/14" for 127.0.0.1 at 2013-08-05 07:56:25 -0400
+Processing by FamiliesController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[35mFamily Load (0.3ms)[0m  SELECT `families`.* FROM `families` WHERE `families`.`id` = 14 LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM `people` WHERE `people`.`family_id` = 14[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM `people` WHERE `people`.`family_id` = 14
+  [1m[36mPerson Load (0.2ms)[0m  [1mSELECT `people`.* FROM `people` WHERE `people`.`family_id` = 14[0m
+  [1m[35mFoodItem Load (0.3ms)[0m  SELECT `food_items`.* FROM `food_items` INNER JOIN `food_promises` ON `food_items`.`id` = `food_promises`.`food_item_id` WHERE `food_promises`.`family_id` = 14
+  Rendered families/show.html.erb within layouts/application (14.7ms)
+Completed 200 OK in 35ms (Views: 31.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/food_committee.css?body=1" for 127.0.0.1 at 2013-08-05 07:56:25 -0400
+Served asset /food_committee.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/my_formtastic_changes.css?body=1" for 127.0.0.1 at 2013-08-05 07:56:25 -0400
+Served asset /my_formtastic_changes.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/formtastic.css?body=1" for 127.0.0.1 at 2013-08-05 07:56:25 -0400
+Served asset /formtastic.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/food_items.css?body=1" for 127.0.0.1 at 2013-08-05 07:56:25 -0400
+Served asset /food_items.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/families.css?body=1" for 127.0.0.1 at 2013-08-05 07:56:25 -0400
+Served asset /families.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/people.css?body=1" for 127.0.0.1 at 2013-08-05 07:56:25 -0400
+Served asset /people.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/registrar.css?body=1" for 127.0.0.1 at 2013-08-05 07:56:25 -0400
+Served asset /registrar.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-08-05 07:56:25 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/volunteer_tasks.css?body=1" for 127.0.0.1 at 2013-08-05 07:56:25 -0400
+Served asset /volunteer_tasks.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-05 07:56:25 -0400
+Served asset /jquery.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/best_in_place.js?body=1" for 127.0.0.1 at 2013-08-05 07:56:25 -0400
+Served asset /best_in_place.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-05 07:56:25 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_nested_form.js?body=1" for 127.0.0.1 at 2013-08-05 07:56:25 -0400
+Served asset /jquery_nested_form.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/families.js?body=1" for 127.0.0.1 at 2013-08-05 07:56:25 -0400
+Served asset /families.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/food_committee.js?body=1" for 127.0.0.1 at 2013-08-05 07:56:25 -0400
+Served asset /food_committee.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.purr.js?body=1" for 127.0.0.1 at 2013-08-05 07:56:25 -0400
+Served asset /jquery.purr.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/food_items.js?body=1" for 127.0.0.1 at 2013-08-05 07:56:25 -0400
+Served asset /food_items.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/people.js?body=1" for 127.0.0.1 at 2013-08-05 07:56:25 -0400
+Served asset /people.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/registrar.js?body=1" for 127.0.0.1 at 2013-08-05 07:56:25 -0400
+Served asset /registrar.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/volunteer_tasks.js?body=1" for 127.0.0.1 at 2013-08-05 07:56:25 -0400
+Served asset /volunteer_tasks.js - 304 Not Modified (0ms)
+
+
+Started GET "/families/14" for 127.0.0.1 at 2013-08-05 07:57:35 -0400
+Processing by FamiliesController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mFamily Load (0.2ms)[0m  [1mSELECT `families`.* FROM `families` WHERE `families`.`id` = 14 LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM `people` WHERE `people`.`family_id` = 14
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM `people` WHERE `people`.`family_id` = 14[0m
+  [1m[35mPerson Load (0.2ms)[0m  SELECT `people`.* FROM `people` WHERE `people`.`family_id` = 14
+  [1m[36mFoodItem Load (0.3ms)[0m  [1mSELECT `food_items`.* FROM `food_items` INNER JOIN `food_promises` ON `food_items`.`id` = `food_promises`.`food_item_id` WHERE `food_promises`.`family_id` = 14[0m
+  Rendered families/show.html.erb within layouts/application (16.1ms)
+Completed 200 OK in 36ms (Views: 32.8ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/families.css?body=1" for 127.0.0.1 at 2013-08-05 07:57:35 -0400
+Served asset /families.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/food_committee.css?body=1" for 127.0.0.1 at 2013-08-05 07:57:35 -0400
+Served asset /food_committee.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/my_formtastic_changes.css?body=1" for 127.0.0.1 at 2013-08-05 07:57:35 -0400
+Served asset /my_formtastic_changes.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/food_items.css?body=1" for 127.0.0.1 at 2013-08-05 07:57:35 -0400
+Served asset /food_items.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/formtastic.css?body=1" for 127.0.0.1 at 2013-08-05 07:57:35 -0400
+Served asset /formtastic.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/people.css?body=1" for 127.0.0.1 at 2013-08-05 07:57:35 -0400
+Served asset /people.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/registrar.css?body=1" for 127.0.0.1 at 2013-08-05 07:57:35 -0400
+Served asset /registrar.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-08-05 07:57:35 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/volunteer_tasks.css?body=1" for 127.0.0.1 at 2013-08-05 07:57:35 -0400
+Served asset /volunteer_tasks.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-05 07:57:35 -0400
+Served asset /jquery.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-05 07:57:35 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.purr.js?body=1" for 127.0.0.1 at 2013-08-05 07:57:35 -0400
+Served asset /jquery.purr.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/best_in_place.js?body=1" for 127.0.0.1 at 2013-08-05 07:57:35 -0400
+Served asset /best_in_place.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_nested_form.js?body=1" for 127.0.0.1 at 2013-08-05 07:57:35 -0400
+Served asset /jquery_nested_form.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/families.js?body=1" for 127.0.0.1 at 2013-08-05 07:57:35 -0400
+Served asset /families.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/food_committee.js?body=1" for 127.0.0.1 at 2013-08-05 07:57:35 -0400
+Served asset /food_committee.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/food_items.js?body=1" for 127.0.0.1 at 2013-08-05 07:57:35 -0400
+Served asset /food_items.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/people.js?body=1" for 127.0.0.1 at 2013-08-05 07:57:35 -0400
+Served asset /people.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/registrar.js?body=1" for 127.0.0.1 at 2013-08-05 07:57:35 -0400
+Served asset /registrar.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/volunteer_tasks.js?body=1" for 127.0.0.1 at 2013-08-05 07:57:35 -0400
+Served asset /volunteer_tasks.js - 304 Not Modified (0ms)

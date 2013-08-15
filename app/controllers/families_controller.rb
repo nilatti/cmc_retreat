@@ -96,6 +96,7 @@ class FamiliesController < ApplicationController
   
   def paid 
     Family.update_all(["paid=?", 1], :id => params[:family_ids])
+    flash[:notice] = "Your Transaction is #{params[:st]} for amount of $#{params[:amt]}. Thank You for paying." if params[:st]
     redirect_to registrar_url
   end
 end

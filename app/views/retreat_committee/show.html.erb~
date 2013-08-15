@@ -1,5 +1,5 @@
 <h2>Retreat Committee</h2>
-<p>Total numbers:<br />
+<p><h3>Total numbers:</h3><br />
 <b>Camping:</b>
 <%= @families.map(&:camp).sum %><br />
 <b>Cabin:</b>
@@ -9,4 +9,21 @@
 <b>Day (Partial Weekend)</b>
 <%= @families.map(&:day_partial_weekend).sum %><br />
 
-
+<div id="requests">
+	<h3>Volunteer Tasks</h3>
+<table border="1">
+<th>Task</th>
+<th># Pledged</th>
+<th># Requested</th>
+<th>Who is doing</th>
+<% @volunteer_tasks.each do |vj| %>
+  <tr>
+  <td><%= vj.job_label %></td>
+  <td><%= vj.volunteer_promises_count %></td>
+  <td><%= vj.requested %></td>
+  <td><% vj.volunteer_promises.each do |vp|%><% if vp.family %><%= vp.family.people[0].first_name %> <%= vp.family.people[0].last_name %><% end %><br /><% end %>
+  </tr>
+<% end %>
+</table>
+<%= link_to "Add volunteer task", new_volunteer_task_path %>
+</div>

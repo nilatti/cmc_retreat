@@ -19,7 +19,7 @@ class Family < ActiveRecord::Base
 
   def paypal_url(return_url) 
     values = { 
-      :business => 'seller_1356111168_biz@gmail.com',
+      :business => 'paypal@cmcva.org',
       :cmd => '_cart',
       :upload => 1,
       :return => return_url,
@@ -33,7 +33,7 @@ class Family < ActiveRecord::Base
       "quantity_1" => '1'
     })
 
-    "https://www.sandbox.paypal.com/cgi-bin/webscr?" + values.to_query
+    "https://www.paypal.com/cgi-bin/webscr?" + values.to_query
   end
 
   def family_name

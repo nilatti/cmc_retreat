@@ -1,30 +1,62 @@
 <h2> Food Committee Total Numbers:</h2>
+<div id="numbers">
 <p>
 <b>Friday Supper</b>
-<% friday_supper_total = 0 %>
 <%= @families.map(&:friday_supper).sum %>
 </p>
 <p>
 <b>Friday Snack</b>
-<% friday_snack_total = 0 %>
-<% @families.each do |f| %>
-  <% friday_snack_total = friday_snack_total + f.friday_snack %>
-<% end %>
-<%= friday_snack_total %>
+<%= @families.map(&:friday_snack).sum %>
 </p>
-....etc other meals go here
-<table>
+<p>
+<b>Saturday Breakfast</b>
+<%= @families.map(&:saturday_breakfast).sum %>
+</p>
+<b>Saturday Lunch</b>
+<%= @families.map(&:saturday_lunch).sum %>
+</p>
+<p>
+	<b>Saturday Dinner</b>
+	<%= @families.map(&:saturday_dinner).sum %>
+</p>
+<p>
+	<b>Saturday Snack</b>
+	<%= @families.map(&:saturday_snack).sum %>
+</p>
+<p>
+	<b>Sunday Breakfast</b>
+	<%= @families.map(&:sunday_breakfast).sum %>
+</p>
+<p>
+	<b>Sunday Lunch</b>
+	<%= @families.map(&:sunday_lunch).sum %>
+</p>
+</div>
+<div id="requests">
+	<h3>Items Requested</h3>
+<table border="1">
 <th>Item</th>
 <th># Pledged</th>
-<th># Committed</th>
+<th># Requested</th>
+<th>Who is bringing</th>
 <% @food_items.each do |fi| %>
   <tr>
   <td><%= fi.description %></td>
   <td><%= fi.food_promises_count %></td>
   <td><%= fi.requested %></td>
+  <td><% fi.food_promises.each do |fp|%><% if fp.family %><%= fp.family.people[0].first_name %> <%= fp.family.people[0].last_name %><% end %><br /><% end %>
   </tr>
 <% end %>
 </table>
 <%= link_to "Add food item", new_food_item_path %>
-
-
+</div>
+<div id="allergies">
+<p>
+<h3>Allergies:</h3>
+<% @families.each do |f| %>
+  <% unless f.allergies.nil? %>
+    <%= f.allergies %><br />
+  <% end %>
+<% end %>
+</p>
+</div>

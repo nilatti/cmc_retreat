@@ -10,16 +10,19 @@
 <%= @families.map(&:day_partial_weekend).sum %><br />
 
 <div id="requests">
-	<h3>Volunteer Tasks</h3>
-<table>
+	<h3>Volunteer Tasks</h3><br />
+	<i>For the sake of simplicity, this table lists only the first person from each family.</i>
+<table border="1">
 <th>Task</th>
 <th># Pledged</th>
 <th># Requested</th>
+<th>Who is doing</th>
 <% @volunteer_tasks.each do |vj| %>
   <tr>
   <td><%= vj.job_label %></td>
   <td><%= vj.volunteer_promises_count %></td>
   <td><%= vj.requested %></td>
+  <td><% vj.volunteer_promises.each do |vp|%><% if vp.family %><%= vp.family.people[0].first_name %> <%= vp.family.people[0].last_name %><% end %><br /><% end %>
   </tr>
 <% end %>
 </table>

@@ -50,7 +50,9 @@ class FamiliesController < ApplicationController
     
     respond_to do |format|
       if @family.save
-        UserMailer.confirmation_email(@family).deliver
+        unless @family.email.blank?
+          UserMailer.confirmation_email(@family).deliver
+        end
         format.html { redirect_to @family, notice: 'Family was successfully created.' }
         format.json { render json: @family, status: :created, location: @family }
       else
@@ -94,6 +96,7 @@ class FamiliesController < ApplicationController
   
   def paid 
     Family.update_all(["paid=?", 1], :id => params[:family_ids])
+    flash[:notice] = "Your Transaction is #{params[:st]} for amount of $#{params[:amt]}. Thank You for shopping." if params[:st]
     redirect_to registrar_url
   end
 end

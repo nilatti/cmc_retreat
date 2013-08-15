@@ -33,16 +33,20 @@
 </p>
 </div>
 <div id="requests">
-	<h3>Items Requested</h3>
-<table>
+	<h3>Items Requested</h3><br />
+		<i>For the sake of simplicity, this table lists only the first person from each family.</i>
+
+<table border="1">
 <th>Item</th>
 <th># Pledged</th>
 <th># Requested</th>
+<th>Who is bringing</th>
 <% @food_items.each do |fi| %>
   <tr>
   <td><%= fi.description %></td>
   <td><%= fi.food_promises_count %></td>
   <td><%= fi.requested %></td>
+  <td><% fi.food_promises.each do |fp|%><% if fp.family %><%= fp.family.people[0].first_name %> <%= fp.family.people[0].last_name %><% end %><br /><% end %>
   </tr>
 <% end %>
 </table>

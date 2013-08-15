@@ -1,0 +1,571 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1376566632.4119837:@value"Š,[I"|,/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+
+
+
+
+
+ */
+
+/* -------------------------------------------------------------------------------------------------
+
+It's *strongly* suggested that you don't modify this file.  Instead, load a new stylesheet after
+this one in your layouts (eg formtastic_changes.css) and override the styles to suit your needs.
+This will allow you to update formtastic.css with new releases without clobbering your own changes.
+
+This stylesheet forms part of the Formtastic Rails Plugin
+(c) 2008-2011 Justin French
+
+--------------------------------------------------------------------------------------------------*/
+
+/* NORMALIZE AND RESET - obviously inspired by Yahoo's reset.css, but scoped to just .formtastic
+--------------------------------------------------------------------------------------------------*/
+
+.formtastic,
+.formtastic ul,
+.formtastic ol,
+.formtastic li,
+.formtastic fieldset,
+.formtastic legend,
+.formtastic input,
+.formtastic button,
+.formtastic textarea,
+.formtastic select,
+.formtastic p {
+  margin:0;
+  padding:0;
+}
+
+.formtastic fieldset {
+  border:0;
+}
+
+.formtastic em,
+.formtastic strong {
+  font-style:normal;
+  font-weight:normal;
+}
+
+.formtastic ol,
+.formtastic ul {
+  list-style:none;
+}
+
+.formtastic abbr,
+.formtastic acronym {
+  border:0;
+  font-variant:normal;
+}
+
+.formtastic input,
+.formtastic button,
+.formtastic textarea {
+  font-family:sans-serif;
+  font-size:inherit;
+  font-weight:inherit;
+}
+
+.formtastic input,
+.formtastic textarea,
+.formtastic select {
+  font-size:100%;
+}
+
+.formtastic legend {
+  white-space:normal;
+  color:#000;
+}
+
+
+/* SEMANTIC ERRORS
+--------------------------------------------------------------------------------------------------*/
+.formtastic .errors {
+  color:#cc0000;
+  margin:0.5em 0 1.5em 25%;
+  list-style:square;
+}
+
+.formtastic .errors li {
+  padding:0;
+  border:none;
+  display:list-item;
+}
+
+
+/* BUTTONS & ACTIONS
+--------------------------------------------------------------------------------------------------*/
+.formtastic .buttons, 
+.formtastic .actions {
+  overflow:hidden; /* clear containing floats */
+  padding-left:25%;
+}
+
+.formtastic .button, 
+.formtastic .action {
+  float:left;
+  padding-right:0.5em;
+}
+
+.formtastic .button_action button {
+  padding:3px 8px;
+}
+
+.formtastic .link_action a {
+  display:block;
+  padding:3px 0;
+}
+
+
+/* INPUTS
+--------------------------------------------------------------------------------------------------*/
+.formtastic .inputs {
+  overflow:hidden; /* clear containing floats */
+}
+
+.formtastic .input {
+  overflow:hidden; /* clear containing floats */
+  padding:0.5em 0; /* padding and negative margin juggling is for Firefox */
+  margin-top:-0.5em;
+  margin-bottom:1em;
+}
+
+
+/* LEFT ALIGNED LABELS
+--------------------------------------------------------------------------------------------------*/
+.formtastic .input .label {
+  display:block;
+  width:25%;
+  float:left;
+  padding-top:.2em;
+}
+
+.formtastic .fragments .label,
+.formtastic .choices .label {
+  position:absolute;
+  width:95%;
+  left:0px;
+}
+
+.formtastic .fragments .label label,
+.formtastic .choices .label label {
+  position:absolute;
+}
+
+/* NESTED FIELDSETS AND LEGENDS (radio, check boxes and date/time inputs use nested fieldsets)
+--------------------------------------------------------------------------------------------------*/
+.formtastic .choices {
+  position:relative;
+}
+
+.formtastic .choices-group {
+  float:left;
+  width:74%;
+  margin:0;
+  padding:0 0 0 25%;
+}
+
+.formtastic .choice {
+  padding:0;
+  border:0;
+}
+
+
+/* INLINE HINTS
+--------------------------------------------------------------------------------------------------*/
+.formtastic .input .inline-hints {
+  color:#666;
+  margin:0.5em 0 0 25%;
+}
+
+
+/* INLINE ERRORS
+--------------------------------------------------------------------------------------------------*/
+.formtastic .inline-errors {
+  color:#cc0000;
+  margin:0.5em 0 0 25%;
+}
+
+.formtastic .errors {
+  color:#cc0000;
+  margin:0.5em 0 0 25%;
+  list-style:square;
+}
+
+.formtastic .errors li {
+  padding:0;
+  border:none;
+  display:list-item;
+}
+
+
+/* STRING, NUMERIC, PASSWORD, EMAIL, URL, PHONE, SEARCH (ETC) OVERRIDES
+--------------------------------------------------------------------------------------------------*/
+.formtastic .stringish input {
+  width:72%;
+}
+
+.formtastic .stringish input[size],
+.formtastic .stringish input[max] {
+  width:auto;
+  max-width:72%;
+}
+
+
+/* TEXTAREA OVERRIDES
+--------------------------------------------------------------------------------------------------*/
+.formtastic .text textarea {
+  width:72%;
+}
+
+.formtastic .text textarea[cols] {
+  width:auto;
+  max-width:72%;
+}
+
+
+/* HIDDEN OVERRIDES
+--------------------------------------------------------------------------------------------------*/
+.formtastic .hidden {
+  display:none;
+}
+
+
+/* BOOLEAN LABELS
+--------------------------------------------------------------------------------------------------*/
+.formtastic .boolean label {
+  padding-left:25%;
+  display:block;
+}
+
+
+/* CHOICE GROUPS
+--------------------------------------------------------------------------------------------------*/
+.formtastic .choices-group {
+  margin-bottom:-0.5em;
+}
+
+.formtastic .choice {
+  margin:0.1em 0 0.5em 0;
+}
+
+.formtastic .choice label {
+  float:none;
+  width:100%;
+  line-height:100%;
+  padding-top:0;
+  margin-bottom:0.6em;
+}
+
+
+/* ADJUSTMENTS FOR INPUTS INSIDE LABELS (boolean input, radio input, check_boxes input)
+--------------------------------------------------------------------------------------------------*/
+.formtastic .choice label input,
+.formtastic .boolean label input {
+  margin:0 0.3em 0 0.1em;
+  line-height:100%;
+}
+
+
+/* FRAGMENTED INPUTS (DATE/TIME/DATETIME)
+--------------------------------------------------------------------------------------------------*/
+.formtastic .fragments {
+  position:relative;
+}
+
+.formtastic .fragments-group {
+  float:left;
+  width:74%;
+  margin:0;
+  padding:0 0 0 25%;
+}
+
+.formtastic .fragment {
+  float:left;
+  width:auto;
+  margin:0 .3em 0 0;
+  padding:0;
+  border:0;
+}
+
+.formtastic .fragment label {
+  display:none;
+}
+
+.formtastic .fragment label input {
+  display:inline;
+  margin:0;
+  padding:0;
+}
+
+body {
+margin : 0;
+padding : 0;
+font : 73% "Trebuchet MS", verdana, arial, sans-serif;
+background : #2e2e2e;
+color : #333;
+}
+#container {
+width : 1100px;
+margin-left : auto;
+margin-right : auto;
+padding : 0;
+border : 5px solid #336633;
+background : #e9eee4;
+color : #333;
+}
+			/*TOP BANNER*/
+#topimg {
+height : 500px;
+padding : 0;
+margin : 0;
+background : #417c2c url('pacecrop3.jpg') no-repeat;
+color : #333;
+}
+#topimg h1 {
+float : left;
+margin : 10px 0 0 15px;
+font-size : 150%;
+letter-spacing: 3px;
+color : #fff;
+background : #336633;
+}
+			/*TOP NAVIGATIONY*/
+#navcontainer ul {
+float : left;
+width : 100%;
+padding-left : 0;
+margin : 0 0 20px 0;
+font-size : 110%;
+border-top : 1px solid #fff;
+border-bottom : 1px solid #fff;
+background : #417c2c;
+color : #333;
+}
+#navcontainer ul li {
+display : inline;
+}
+#navcontainer ul li a {
+float : left;
+padding : 0.2em 1em;
+text-decoration : none;
+border-right : 1px solid #fff;
+background : #336633;
+color : #fff;
+}
+#navcontainer ul li a:hover, #navcontainer ul li a#current {
+background : #91ae00;
+color : #000;
+}
+			/*MAIN CONTENT*/
+#content {
+margin : 0 0 5px 170px;
+padding : 5px;
+border-left : 1px dashed #999;
+background : inherit;
+color : #333;
+}
+#content a:link, #content a:visited {
+text-decoration : underline;
+background : inherit;
+color : #417C2C;
+}
+#content a:hover {
+background : inherit;
+color : #91AE00;
+}
+			/*SIDEBAR*/
+#sidebar {
+float : left;
+width : 160px;
+margin : 0 10px 0 0;
+padding : 5px;
+background : #e9eee4;
+color : #333;
+}
+			/*SIDE MENU*/
+.sidemenu ul {
+list-style-type : none;
+text-align : left;
+}
+.sidemenu ul li {
+display : block;
+color : #666;
+background : inherit;
+}
+.sidemenu ul li a {
+background : transparent url(img/list-off.gif) no-repeat left center;
+padding-left : 15px;
+font : normal 11px "Lucida Grande", "Lucida Sans Unicode", verdana, lucida, sans-serif;
+text-decoration : none;
+color : #000;
+}
+.sidemenu ul li a:hover {
+background : transparent url(img/list-on.gif) no-repeat left center;
+color : #666;
+}
+.sidemenu ul li a#current {
+background : transparent url(img/list-active.gif) no-repeat left center;
+color : #666;
+}
+			/*FOOTER*/
+#footer {
+clear : both;
+padding : 5px;
+margin : 0;
+font-size : 90%;
+border-top : 1px solid #fff;
+background : #417c2c;
+color : #333;
+}
+#footer a:link, #footer a:visited {
+text-decoration : none;
+background : inherit;
+color : #fff;
+}
+#footer a:hover {
+border-bottom : 1px dashed #eee;
+background: inherit;
+color : #333;
+}
+			/*TYPOGRAPHY*/
+p {
+line-height: 1.7em;
+margin : 15px;
+}
+h1 {
+margin-top : 10px;
+padding : 0;
+font-size : 140%;
+text-transform : uppercase;
+letter-spacing: 3px;
+color : #336633;
+background : inherit;
+}
+h2 {
+margin : 10px 0 0 5px;
+padding-left : 10px;
+font-size : 120%;
+text-transform : uppercase;
+letter-spacing : 5px;
+color : #fff;
+background : #417c2c;
+}
+			/*CLASSES*/
+.img {
+float : left;
+padding : 10px;
+border : none;
+}
+.img a {
+border : none;
+}
+.post { 
+background : #eee;
+padding : 3px;
+margin : 20px 10px 0 5px;
+border : 0 dashed #8a795d;
+font-size : 90%;
+} 
+.post .date { 
+background : url(img/clock.gif) no-repeat left center;
+padding-left : 15px;
+margin : 0 15px 0 5px;
+} 
+.post .comments { 
+background : url(img/comment.gif) no-repeat left center;
+padding-left : 15px;
+margin : 0 15px 0 5px;
+} 
+.post .readmore { 
+background : url(img/document.gif) no-repeat left center;
+padding-left : 15px;
+margin : 0 15px 0 5px;
+} 
+blockquote {
+font-weight : bold;
+font-style : italic;
+color : #b29b35;
+}
+.formtastic .input .label {
+  display:block;
+  width:50%;
+  float:left;
+  padding-top:.2em;
+}
+
+.formtastic .input .inline-hints {
+  color:#666;
+  margin:0.5em 0 0 2%;
+}
+
+.formtastic .stringish input {
+  width:40%;
+}
+
+.formtastic .number input {
+	width: 10%;
+}
+body {
+  background-color: #fff;
+  color: #333;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px; }
+
+p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px; }
+
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px; }
+
+a {
+  color: #000; }
+  a:visited {
+    color: #666; }
+  a:hover {
+    color: #fff;
+    background-color: #000; }
+
+div.field, div.actions {
+  margin-bottom: 10px; }
+
+#notice {
+  color: green; }
+
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table; }
+
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0; }
+  #error_explanation h2 {
+    text-align: left;
+    font-weight: bold;
+    padding: 5px 5px 5px 15px;
+    font-size: 12px;
+    margin: -7px;
+    margin-bottom: 0px;
+    background-color: #c00;
+    color: #fff; }
+  #error_explanation ul li {
+    font-size: 12px;
+    list-style: square; }
+:EF

@@ -565,3 +565,67 @@ Compiled registrar.css  (2ms)  (pid 26067)
 Compiled scaffolds.css  (24ms)  (pid 26067)
 Compiled volunteer_tasks.css  (1ms)  (pid 26067)
 Compiled application.css  (234ms)  (pid 26067)
+Connecting to database specified by database.yml
+Started GET "/" for 127.0.0.1 at 2013-08-15 07:37:10 -0400
+Processing by FamiliesController#welcome as HTML
+  Rendered families/welcome.html.erb within layouts/application (55.5ms)
+Completed 200 OK in 92ms (Views: 90.7ms | ActiveRecord: 0.0ms)
+Started GET "/assets/application-77665766a36fe032809f42d4c8566ce0.css" for 127.0.0.1 at 2013-08-15 07:37:11 -0400
+Compiled families.css  (569ms)  (pid 21002)
+Compiled food_committee.css  (2ms)  (pid 21002)
+Compiled food_items.css  (2ms)  (pid 21002)
+Compiled formtastic.css  (0ms)  (pid 21002)
+Compiled greenpiece.css  (0ms)  (pid 21002)
+Compiled my_formtastic_changes.css  (0ms)  (pid 21002)
+Compiled people.css  (1ms)  (pid 21002)
+Compiled registrar.css  (2ms)  (pid 21002)
+Compiled scaffolds.css  (19ms)  (pid 21002)
+Compiled volunteer_tasks.css  (1ms)  (pid 21002)
+Compiled application.css  (709ms)  (pid 21002)
+Served asset /application-77665766a36fe032809f42d4c8566ce0.css - 200 OK (745ms)
+Started GET "/assets/application-a82bcad9beb1db0eed9b3ccd2ef3f590.js" for 127.0.0.1 at 2013-08-15 07:37:12 -0400
+Compiled jquery.js  (5ms)  (pid 21002)
+Compiled jquery_ujs.js  (0ms)  (pid 21002)
+Compiled jquery.purr.js  (0ms)  (pid 21002)
+Compiled best_in_place.js  (1ms)  (pid 21002)
+Compiled jquery_nested_form.js  (1ms)  (pid 21002)
+Compiled families.js  (907ms)  (pid 21002)
+Compiled food_committee.js  (2ms)  (pid 21002)
+Compiled food_items.js  (1ms)  (pid 21002)
+Compiled people.js  (1ms)  (pid 21002)
+Compiled registrar.js  (1ms)  (pid 21002)
+Compiled volunteer_tasks.js  (1ms)  (pid 21002)
+Compiled application.js  (1177ms)  (pid 21002)
+Served asset /application-a82bcad9beb1db0eed9b3ccd2ef3f590.js - 200 OK (6493ms)
+Started GET "/assets/pacecrop3.jpg" for 127.0.0.1 at 2013-08-15 07:37:19 -0400
+Served asset /pacecrop3.jpg - 200 OK (7ms)
+Started GET "/assets/img/list-off.gif" for 127.0.0.1 at 2013-08-15 07:37:19 -0400
+Served asset /img/list-off.gif - 404 Not Found (3ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/img/list-off.gif"):
+  actionpack (3.2.9) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.9) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.9) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.9) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.9) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.9) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  rack-cache (1.2) lib/rack/cache/context.rb:136:in `forward'
+  rack-cache (1.2) lib/rack/cache/context.rb:245:in `fetch'
+  rack-cache (1.2) lib/rack/cache/context.rb:185:in `lookup'
+  rack-cache (1.2) lib/rack/cache/context.rb:66:in `call!'
+  rack-cache (1.2) lib/rack/cache/context.rb:51:in `call'
+  railties (3.2.9) lib/rails/engine.rb:479:in `call'
+  railties (3.2.9) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.9) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/alisha/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/alisha/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/alisha/.rvm/rubies/ruby-1.9.3-p194/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+

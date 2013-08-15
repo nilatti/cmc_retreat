@@ -10,6 +10,7 @@
  *
  *= require_self
  *= require_tree .
+ *= require greenpiece
  *= require formtastic
  *= require my_formtastic_changes
  */

@@ -11,7 +11,7 @@ class Family < ActiveRecord::Base
 
   def total_cost
     total = (cabin*25)+(camp*20)+(day_full_weekend*15)+(day_partial_weekend*5)  
-    if total > 100 then adjusted_total = 100 else adjusted_total = total end
+    if total > 125 then adjusted_total = 125 else adjusted_total = total end
     if created_at > '2013-09-01 00:00:00 -0500' then adjusted_total = (adjusted_total+5) end
     if contribution then adjusted_total = (adjusted_total+contribution) end
     adjusted_total

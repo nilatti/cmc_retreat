@@ -5,6 +5,6 @@ class VolunteerTask < ActiveRecord::Base
   has_many :families, :through => :volunteer_promises
 
   def job_label
-  	job_label = self.job_title + " -- " + self.time + "<i>" + self.job_description + "</i>"
+  	job_label = self.job_title + " -- " + self.time + " --- " + self.job_description
   end
 end

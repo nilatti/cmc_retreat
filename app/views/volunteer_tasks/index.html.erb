@@ -3,6 +3,7 @@
 <table>
   <tr>
     <th>Job</th>
+    <th>Description</th>
     <th>Requested</th>
     <th></th>
     <th></th>
@@ -12,6 +13,7 @@
 <% @volunteer_tasks.each do |volunteer_task| %>
   <tr>
     <td><%= volunteer_task.job_title %></td>
+    <td><%= volunteer_task.job_description %>
     <td><%= volunteer_task.requested %></td>
     <td><%= link_to 'Show', volunteer_task %></td>
     <td><%= link_to 'Edit', edit_volunteer_task_path(volunteer_task) %></td>

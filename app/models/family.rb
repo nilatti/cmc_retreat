@@ -23,7 +23,7 @@ class Family < ActiveRecord::Base
       :cmd => '_cart',
       :upload => 1,
       :return => return_url,
-      :invoice => 1
+      :invoice => self.id
     }
 
     values.merge!({ 

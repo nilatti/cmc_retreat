@@ -7,7 +7,6 @@ $<%= @family.total_cost %><br />
 <p>
 <% if @family.people.size < @family.total_registrants %>It looks like you have registered more people in the accommodations section than you've told us are in your family. You might be overpaying. Please double check this. <%= link_to 'Click here to edit.', edit_family_path(@family) %> <% end %>
 
-<% if @family.total_registrants >= @family.people.size - @family.num_kids  %>It looks like you might have included some children in the accommodations section of the form. Remember, children under six stay free, so you don't need to include them. Please double check this. <%= link_to 'Click here to edit.', edit_family_path(@family) %> <% end %>
 <p>
   <% if @family.email %>
     <b>Email address:</b>

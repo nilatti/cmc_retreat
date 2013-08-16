@@ -27,7 +27,7 @@
 <p><h3><%= f.inputs :name => "Accommodations", :id => "accomodations" do %></h3></p>
 <i>If you are only coming for Sunday worship and lunch, you do not have to pay (although a donation to help with food costs would be appreciated). Please let us know, in the next section, that you will be eating lunch with us. This helps us plan. <a href="#food">Click here</a> to jump to the food section.</i></p>
 <p><b>Please note that you should not list children 4 years old and younger in the accommodation section. Small children attend retreat for free.</b></p>
-<p><h4>There is a maximum cost of $100 per family. This adjusted cost will be reflected on the payment page.</h4></p>
+<p><h4>There is a maximum cost of $125 per family. This adjusted cost will be reflected on the payment page.</h4></p>
     <%= f.input :cabin, :label => "How many people will be staying in a cabin? This includes teens staying in The Ark ($35/person)", :as => :select, :collection => ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"], :include_blank => false %>
     <%= f.input :camp, :label => "How many people will be camping? ($25/person)", :as => :select, :collection => ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"], :include_blank => false %>
     <%= f.input :day_full_weekend, :label => "How many people plan to attend most of the weekend's activities, but not stay overnight? ($15/person)", :as => :select, :collection => ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"], :include_blank => false %>

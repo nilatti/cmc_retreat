@@ -1,4 +1,6 @@
 Retreat::Application.routes.draw do
+
+
   root :to => 'families#welcome'
 
   resources :volunteer_tasks
@@ -25,6 +27,11 @@ Retreat::Application.routes.draw do
   resource :childcare, :controller => :childcare
   resource :registrar, :controller => :registrar
   
+  get "static_pages/info"
+  get "static_pages/schedule"
+  #map.connect ':action', :controller => "static_pages"
+  #match 'static_pages/:action', :controller => "static_pages"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

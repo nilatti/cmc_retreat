@@ -27,7 +27,10 @@ says the Lord.<br /></i>
     </div>
   	<div class="sidemenu">
       <ul>
-        <li><a href="#">Retreat Schedule</a></li>
+        <li><%= link_to 'Schedule', :controller => "static_pages", :action => "schedule" %></li>
+        <li><%= link_to 'General Info', 'info' %></li>
+        
+
         <li><%= link_to 'Register', new_family_path %></li>
         <li><a href="http://overlookretreatandcampministries.weebly.com/directions.html">Directions</a></li>
         <li><a href="mailto:alisha.huber@gmail.com">Contact Retreat Committee</a> </li>

@@ -51,6 +51,7 @@
   <h3>The committee requests that each family bring one of the food items listed below, and sign up for at least one volunteer shift. Thank you.</h3>
   <%= f.input :food_items, :collection => FoodItem.where('food_items.requested > food_items.food_promises_count').order('food_items.requested DESC'), :member_label => :description, :as => :check_boxes %>
   <%= f.input :volunteer_tasks, :collection => VolunteerTask.where('volunteer_tasks.requested > volunteer_tasks.volunteer_promises_count').order('volunteer_tasks.time'), :member_label => :job_label, :as => :check_boxes %>
-<%= f.actions %>
+
+<%= f.action :submit, :button_html => { :value => 'Submit'}  %>
 <% end %>
 

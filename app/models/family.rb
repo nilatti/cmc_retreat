@@ -1,5 +1,6 @@
 class Family < ActiveRecord::Base
   validates :people, :presence => {:message => 'You must enter at least one family member.'}
+  validates :email, :format => { :with => /^([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})$/i, :message => 'Your email address appears to be invalid' }
   has_many :people, :dependent => :destroy
   has_many :food_promises
   has_many :food_items, :through => :food_promises

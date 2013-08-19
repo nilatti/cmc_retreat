@@ -5,7 +5,7 @@
   <% unless food_promise.family.nil? %>
 
   <tr>
-    <td><%= food_promise.family.id %></td>
+    <td><%= food_promise.family.family_name %></td>
     <td><%= food_promise.food_item.description %></td>
     <td><%= link_to 'Show', food_promise %></td>
     <td><%= link_to 'Edit', edit_food_promise_path(food_promise) %></td>

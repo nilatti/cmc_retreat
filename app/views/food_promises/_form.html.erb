@@ -1,4 +1,6 @@
 <%= semantic_form_for(@food_promise) do |f| %>
   <% f.inputs %>
+  <%= f.input :family, :collection => Family.all, :member_label => :family_name %>
+  <%= f.input :food_item, :collection => FoodItem.where('food_items.requested > food_items.food_promises_count'), :member_label => :description %>
   <%= f.actions %>
 <% end %>

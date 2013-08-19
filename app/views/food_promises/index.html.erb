@@ -5,8 +5,8 @@
   
 
   <tr>
-   
-    <td><%= food_promise.food_item.description %></td>
+    <td><% unless food_promise.family.nil? %> <%= food_promise.family %><% end %></td>
+    <td><% unless food_promise.food_item.nil? %><%= food_promise.food_item.description %><% end %></td>
     <td><%= link_to 'Show', food_promise %></td>
     <td><%= link_to 'Edit', edit_food_promise_path(food_promise) %></td>
     <td><%= link_to 'Destroy', food_promise, method: :delete, data: { confirm: 'Are you sure?' } %></td>

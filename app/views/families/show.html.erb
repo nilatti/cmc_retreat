@@ -18,14 +18,14 @@ $<%= @family.total_cost %><br />
 Food for potluck
 <% end %>
 <% @family.food_items.each do |fi| %>
-  <%= fi.description %>
+  <%= fi.description %><br />
 <% end %>
 </p>
 <p>
 <b>Volunteer shifts:</b><br />
 <% @family.volunteer_tasks.each do |vt| %>
   <%= vt.job_label %><br />
-  <i><%= vt.job_description %></i>
+  <i><%= vt.job_description %></i><br /><br />
 <% end %>
 </p>
 <p><b>Family name: </b>

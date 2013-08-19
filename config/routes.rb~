@@ -1,4 +1,11 @@
-Myapp::Application.routes.draw do
+Retreat::Application.routes.draw do
+
+
+  root :to => 'families#welcome'
+
+  resources :volunteer_tasks
+
+
   root :to => 'families#new'
   resources :food_items
 
@@ -7,14 +14,24 @@ Myapp::Application.routes.draw do
   get "registrar/show"
 
   resources :families do
-    resources :people, :collection => {:paid => :put}
+    resources :people
+    collection do 
+      put :paid
+    end
   end
+
+  resources :people
   
   resource :food_committee, :controller => :food_committee
   resource :retreat_committee, :controller => :retreat_committee
   resource :childcare, :controller => :childcare
   resource :registrar, :controller => :registrar
   
+  get "static_pages/info"
+  get "static_pages/schedule"
+  #map.connect ':action', :controller => "static_pages"
+  #match 'static_pages/:action', :controller => "static_pages"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

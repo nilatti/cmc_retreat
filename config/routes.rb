@@ -8,7 +8,7 @@ Retreat::Application.routes.draw do
 
   root :to => 'families#new'
   resources :food_items
-
+  resources :food_promises
 
   get "food_committee/index"
   get "registrar/show"

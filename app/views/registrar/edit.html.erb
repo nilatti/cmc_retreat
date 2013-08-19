@@ -1,7 +1,8 @@
 <i><p>Families listed in italics have paid</i></p>
-
+<% @families.sort! { |a,b| a.family_name <=> b.family_name } %>
 <%= form_tag paid_families_path, :method => :put do %>
   <ul> 
+  	
   <% for family in @families %>
     <li>
       <% if family.paid == true %><i><% end %>

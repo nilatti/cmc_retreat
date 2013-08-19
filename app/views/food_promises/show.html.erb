@@ -1,0 +1,5 @@
+<p id="notice"><%= notice %></p>
+
+<p><%= @food_promise.family.family_name %> -- <%= @food_promise.food_item.description %>
+<%= link_to 'Edit', edit_food_promise_path(@food_promise) %> |
+<%= link_to 'Back', food_promises_path %>

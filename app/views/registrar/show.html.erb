@@ -16,7 +16,7 @@
     <th></th>
     <th></th>
   </tr>
-
+<% @families.sort! { |a,b| a.family_name <=> b.family_name } %>
 <% @families.each do |family| %>
   <tr>
     <td><%= family.family_name %>

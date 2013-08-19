@@ -2,6 +2,8 @@
 
 <table>
   <% @food_promises.each do |food_promise| %>
+  <% unless food_promise.family.nil? %>
+
   <tr>
     <td><%= food_promise.family.id %></td>
     <td><%= food_promise.food_item.description %></td>
@@ -11,7 +13,7 @@
   </tr>
 <% end %>
 </table>
-
+<% end %>
 <br />
 
 <%= link_to 'New Food promise', new_food_promise_path %>

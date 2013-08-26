@@ -2,10 +2,10 @@ class Family < ActiveRecord::Base
   validates :people, :presence => {:message => 'You must enter at least one family member.'}
   validates :email, :format => { :with => /^([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})$/i, :message => 'Your email address appears to be invalid' }, :allow_blank => true
   has_many :people, :dependent => :destroy
-  has_many :food_promises
+  has_many :food_promises, :dependent => :destroy
   has_many :food_items, :through => :food_promises
 
-  has_many :volunteer_promises
+  has_many :volunteer_promises, :dependent => :destroy
   has_many :volunteer_tasks, :through => :volunteer_promises
    attr_accessible :allergies, :cabin, :camp, :contribution, :day_full_weekend, :day_partial_weekend, :friday_snack, :friday_supper, :late_fee, :paid, :saturday_breakfast, :saturday_dinner, :saturday_lunch, :saturday_snack, :sunday_breakfast, :sunday_lunch, :people_attributes, :food_item_ids, :email, :volunteer_task_ids
   accepts_nested_attributes_for :people, :allow_destroy => true

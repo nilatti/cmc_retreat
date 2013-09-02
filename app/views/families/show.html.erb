@@ -2,7 +2,7 @@
 <p>
   <b>Cost for retreat:</b>
 $<%= @family.total_cost %><br />
-<% if @family.created_at > '2013-09-01 00:00:00 -0500' %><i>includes a late fee of $5</i><% end %>
+<% if @family.created_at > '2013-09-02 00:00:00 -0500' %><i>includes a late fee of $5 per person</i><% end %>
 </p>
 <p>
 <% if @family.people.size < @family.total_registrants %>It looks like you have registered more people in the accommodations section than you've told us are in your family. You might be overpaying. Please double check this. <%= link_to 'Click here to edit.', edit_family_path(@family) %> <% end %>

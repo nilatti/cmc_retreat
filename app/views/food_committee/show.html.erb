@@ -37,7 +37,9 @@
 <h3>Allergies:</h3>
 <% @families.each do |f| %>
   <% if f.allergies %>
-    <%= f.allergies %><br />
+  	<% if f.allergies.length > 1 %>
+      <%= f.allergies %><br />
+    <% end %>
   <% end %>
 <% end %>
 </p>

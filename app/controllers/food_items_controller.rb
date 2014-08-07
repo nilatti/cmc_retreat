@@ -43,7 +43,7 @@ class FoodItemsController < ApplicationController
 
     respond_to do |format|
       if @food_item.save
-        format.html { redirect_to :controller => 'food_committee#show', notice: 'Food item was successfully created.' }
+        format.html { redirect_to "http://retreat.herokuapp.com/food_committee", notice: 'Food item was successfully created.' }
         
       else
         format.html { render action: "new" }
@@ -59,7 +59,7 @@ class FoodItemsController < ApplicationController
 
     respond_to do |format|
       if @food_item.update_attributes(params[:food_item])
-        format.html { redirect_to :controller => 'food_committee#show', notice: 'Food item was successfully updated.' }
+        format.html { redirect_to "http://retreat.herokuapp.com/food_committee", notice: 'Food item was successfully updated.' }
         format.json { head :no_content }
       else
         format.html { render action: "edit" }

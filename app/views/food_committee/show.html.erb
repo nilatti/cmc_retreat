@@ -56,12 +56,13 @@
 <th>Who is bringing</th>
 <th></th>
 <% @food_items.each do |fi| %>
-  <tr>
+  <tr><% if fi.food_promises_count == fi.requested %><em><% end %>
   <td><%= fi.description %></td>
   <td><%= fi.food_promises_count %></td>
   <td><%= fi.requested %></td>
   <td><% fi.food_promises.each do |fp|%><% if fp.family %><%= fp.family.people[0].first_name %> <%= fp.family.people[0].last_name %><% end %><br /><% end %>
   <td><%= link_to 'Edit', edit_food_item_path(fi) %>  <%= link_to 'Destroy', fi, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  <% if fi.food_promises_count == fi.requested %></em><% end %>
   </tr>
 <% end %>
 </table>

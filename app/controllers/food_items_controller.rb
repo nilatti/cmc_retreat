@@ -75,7 +75,7 @@ class FoodItemsController < ApplicationController
     @food_item.destroy
 
     respond_to do |format|
-      format.html { redirect_to food_items_url }
+      format.html { redirect_to "http://retreat.herokuapp.com/food_committee" }
       format.json { head :no_content }
     end
   end

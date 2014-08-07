@@ -36,8 +36,9 @@
 <p>
 <h3>Allergies:</h3>
 <% @families.each do |f| %>
-  <% unless f.allergies.nil? %>
+  <% if f.allergies %>
     <%= f.allergies %><br />
+    <% else %><% end %>
   <% end %>
 <% end %>
 </p>

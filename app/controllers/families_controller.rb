@@ -2,7 +2,7 @@ class FamiliesController < ApplicationController
   # GET /families
   # GET /families.json
   def index
-    flash[:notice] = "Your Transaction is #{params[:st]} for amount of $#{params[:amt]}. Thank You for shopping." if params[:st]
+    flash[:notice] = "Your Transaction is #{params[:st]} for amount of $#{params[:amt]}. Thank You for registering." if params[:st]
     @families = Family.all
 
     respond_to do |format|
@@ -14,7 +14,7 @@ class FamiliesController < ApplicationController
   # GET /families/1
   # GET /families/1.json
   def show
-    flash[:notice] = "Your Transaction is #{params[:st]} for amount of $#{params[:amt]}. Thank You for shopping." if params[:st]
+    flash[:notice] = "Your Transaction is #{params[:st]} for amount of $#{params[:amt]}. Thank You for registering." if params[:st]
     @family = Family.find(params[:id])
 
     respond_to do |format|

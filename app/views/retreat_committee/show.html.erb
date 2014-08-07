@@ -17,12 +17,14 @@
 <th># Pledged</th>
 <th># Requested</th>
 <th>Who is doing</th>
+<th></th>
 <% @volunteer_tasks.each do |vj| %>
   <tr>
   <td><%= vj.job_label %></td>
   <td><%= vj.volunteer_promises_count %></td>
   <td><%= vj.requested %></td>
   <td><% vj.volunteer_promises.each do |vp|%><% if vp.family %><%= vp.family.people[0].first_name %> <%= vp.family.people[0].last_name %><% end %><br /><% end %>
+  <td><%= link_to 'Edit', edit_volunteer_promise_path(vj) %>  <%= link_to 'Destroy', vj, method: :delete, data: { confirm: 'Are you sure?' } %></td>
   </tr>
 <% end %>
 </table>

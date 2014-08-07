@@ -43,8 +43,8 @@ class FoodItemsController < ApplicationController
 
     respond_to do |format|
       if @food_item.save
-        format.html { redirect_to @food_item, notice: 'Food item was successfully created.' }
-        format.json { render json: @food_item, status: :created, location: @food_item }
+        format.html { redirect_to @food_committee, notice: 'Food item was successfully created.' }
+        format.json { render json: @food_committee, status: :created, location: @food_item }
       else
         format.html { render action: "new" }
         format.json { render json: @food_item.errors, status: :unprocessable_entity }
@@ -59,7 +59,7 @@ class FoodItemsController < ApplicationController
 
     respond_to do |format|
       if @food_item.update_attributes(params[:food_item])
-        format.html { redirect_to @food_item, notice: 'Food item was successfully updated.' }
+        format.html { redirect_to @food_committee, notice: 'Food item was successfully updated.' }
         format.json { head :no_content }
       else
         format.html { render action: "edit" }

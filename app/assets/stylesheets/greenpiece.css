@@ -189,7 +189,7 @@ font-style : italic;
 color : #b29b35;
 }
 
-.formtastic button {
+#button .formtastic input {
    border-top: 1px solid #96d1f8;
    background: #67d665;
    background: -webkit-gradient(linear, left top, left bottom, from(#3e9c67), to(#67d665));

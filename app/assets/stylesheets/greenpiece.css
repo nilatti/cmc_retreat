@@ -1,7 +1,7 @@
 body {
 margin : 0;
 padding : 0;
-font : 73% "Trebuchet MS", verdana, arial, sans-serif;
+font : "Trebuchet MS", verdana, arial, sans-serif;
 background : #2e2e2e;
 color : #333;
 }
@@ -10,7 +10,7 @@ width : 85%;
 margin-left : auto;
 margin-right : auto;
 padding : 0;
-padding-bottom: 30px;
+padding-bottom: 50px;
 border : 5px solid #336633;
 background : #e9eee4;
 color : #333;
@@ -189,7 +189,7 @@ font-style : italic;
 color : #b29b35;
 }
 
-.formtastic input {
+.formtastic button {
    border-top: 1px solid #96d1f8;
    background: #67d665;
    background: -webkit-gradient(linear, left top, left bottom, from(#3e9c67), to(#67d665));

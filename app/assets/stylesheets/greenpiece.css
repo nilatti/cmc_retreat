@@ -21,12 +21,11 @@ height : 374px;
 padding : 0;
 margin : 0;
 background : #417c2c url(img/topimg.jpg) no-repeat;
+background-position: center; 
 color : #333;
 }
 
-#topimg img {
-   margin: auto;
-}
+
 
 #topimg h1 {
 float : left;

@@ -35,7 +35,7 @@
 
   <% end %>
   <p><h3><a id="food"><%= f.inputs :name => "Food", :id => "food" do %></h3></a></p>
-   <%= f.input :friday_dinner, :as => :hidden, :value => "0" %>
+   
     <%= f.input :friday_snack, :as => :select, :collection => ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"], :include_blank => false %>
   <%= f.input :saturday_breakfast, :as => :select, :collection => ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"], :include_blank => false %>
   <%= f.input :saturday_lunch, :as => :select, :collection => ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"], :include_blank => false %>

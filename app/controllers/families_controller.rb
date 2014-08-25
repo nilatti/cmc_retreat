@@ -27,7 +27,7 @@ class FamiliesController < ApplicationController
   # GET /families/new.json
   def new
     @family = Family.new
-    @family.friday_supper = 0
+    @family.friday_supper = "0"
 
     respond_to do |format|
       format.html # new.html.erb

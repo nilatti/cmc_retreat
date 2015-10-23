@@ -12,10 +12,10 @@ development:
   adapter: mysql2
   encoding: utf8
   reconnect: false
-  database: myapp_development
+  database: retreat
   pool: 5
-  username: retreat
-  password: greenstreet
+  username: alisha
+  password: To4st3r 
   socket: /var/run/mysqld/mysqld.sock
 
 # Warning: The database defined as "test" will be erased and
@@ -25,10 +25,10 @@ test:
   adapter: mysql2
   encoding: utf8
   reconnect: false
-  database: myapp_test
+  database: retreat_test
   pool: 5
-  username: retreat
-  password: greenstreet
+  username: alisha
+  password: To4st3r
   socket: /var/run/mysqld/mysqld.sock
 
 production:
